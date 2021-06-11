@@ -8,10 +8,12 @@
   publish-year: 2021
   card-color: blue
 
-- author: Phil
+- layout: blog
+  author: Phil
   full-name: Phil Reynolds
+  category: One Day Build
   short-title: directory-of-expertise
-  full-title: 'One Day Build: Directory of Expertise'
+  full-title: Directory of Expertise
   file-type: html
   publish-date: January 3
   publish-year: 2021
@@ -40,9 +42,9 @@
 - layout: blog
   author: Phil
   full-name: Phil Reynolds
+  category: Our Approach
   short-title: build-a-feature
-  full-title: Our Approach
-  sub-title: How To Build a Feature
+  full-title: How To Build a Feature
   file-type: html
   publish-date: May 11
   publish-year: 2021
@@ -52,9 +54,9 @@
 - layout: blog
   author: Phil
   full-name: Phil Reynolds
+  category: Our Approach
   short-title: tooling
-  full-title: Our Approach
-  sub-title: Tools We Use
+  full-title: Tools We Use
   file-type: html
   publish-date: May 18
   publish-year: 2021

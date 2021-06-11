@@ -184,7 +184,7 @@ main #projects .card .btn.repo:hover {
   background: linear-gradient(100deg, #495087, #242F60);
 }
 main #blog .card-row .col {
-  width: 300px;
+  width: 320px;
 }
 @media (max-width: 768px) {
   main #blog .card-row .col {
@@ -209,6 +209,13 @@ main #blog .card-row .col .card img.author {
     height: 2.6rem;
     width: 2.6rem;
   }
+}
+main #blog .card-row .col .card h5 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+main #blog .card-row .col .card .bottom-text {
+  margin-top: auto;
 }
 main #blog .card-row .col .card.blue-card {
   background: #d6eaf8;

@@ -7,7 +7,7 @@
             </h2>
             <p class="lead">
                 {% for article in approach-articles %}
-                    <a href="#{{ article.short-title }}">{{ article.sub-title }}</a>
+                    <a href="#{{ article.short-title }}">{{ article.full-title }}</a>
                     {% unless forloop.last %} | {% endunless %}
                 {% endfor %}
             </p>

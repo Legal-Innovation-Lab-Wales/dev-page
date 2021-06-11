@@ -330,7 +330,7 @@ main {
     .card-row {
 
       .col {
-        width: 300px;
+        width: 320px;
         @media (max-width: $breakpoint-md) {
           margin-left: auto;
           margin-right: auto;
@@ -339,10 +339,12 @@ main {
         a {
           text-decoration: none;
         }
+
         .card {
           img {
             display: block;
             margin: 0 auto;
+
             &.author {
               border-radius: 100%;
               height: 2rem;
@@ -353,6 +355,16 @@ main {
               }
             }
           }
+
+          h5 {
+            margin-bottom: 0;
+            font-weight: 600;
+          }
+
+          .bottom-text {
+            margin-top: auto;
+          }
+
           &.blue-card {
             background: $blue-card-background;
             color: $blue-card-text;
@@ -484,9 +496,11 @@ main {
 .hidden {
   display: none;
 }
+
 pre {
   max-height: 36rem;
 }
+
 /* *** FOOTER *** */
 
 footer {

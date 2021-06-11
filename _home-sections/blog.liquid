@@ -13,11 +13,16 @@
                     <div class="{{ post.card-color }}-card card h-100">
                         <img alt="Author: {{ post.author }}" class="author"
                              src="assets/images/team/{{ post.author |  downcase }}.jpg">
+                        {% if post.category %}
+                            <h5>
+                             {{ post.category }}
+                            </h5>
+                        {% endif %}
                         <h4 class="card-title">{{ post.full-title }}</h4>
                         {% if post.sub-title %}
                             <p class="small">{{ post.sub-title }}</p>
                         {% endif %}
-                        <p class="small">By {{ post.full-name }} on {{ post.publish-date }}, {{ post.publish-year }}</p>
+                        <p class="small bottom-text">By {{ post.full-name }} on {{ post.publish-date }}, {{ post.publish-year }}</p>
                     </div>
                 </a>
             </div>
