@@ -4,28 +4,25 @@
             <h2><span class="link-spacer"></span>Developer Blog
                 <button class="copyLink" onclick="copyText('#blog')"><i class="fas fa-link"></i></button>
             </h2>
-            <p class="lead">A space for our development team to write about topics which interest them, share our ideas and discuss what we’re working on.</p>
+            <p class="lead">A space for our development team to write about topics which interest them, share our ideas
+                and discuss what we’re working on.</p>
         </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-4 mx-auto justify-content-center card-row">
             {% for post in site.data.blog-posts %}
-            <div class="col">
-                <a href="blog/{{ post.author | downcase }}/{{ post.publish-year }}/{{ post.short-title }}.{{ post.file-type }}">
-                    <div class="{{ post.card-color }}-card card h-100">
-                        <img alt="Author: {{ post.author }}" class="author"
-                             src="assets/images/team/{{ post.author |  downcase }}.jpg">
-                        {% if post.category %}
-                            <h5>
-                             {{ post.category }}
-                            </h5>
-                        {% endif %}
-                        <h4 class="card-title">{{ post.full-title }}</h4>
-                        {% if post.sub-title %}
-                            <p class="small">{{ post.sub-title }}</p>
-                        {% endif %}
-                        <p class="small bottom-text">By {{ post.full-name }} on {{ post.publish-date }}, {{ post.publish-year }}</p>
-                    </div>
-                </a>
-            </div>
+                <div class="col">
+                    <a href="blog/{{ post.author | downcase }}/{{ post.publish-year }}/{{ post.short-title }}.{{ post.file-type }}">
+                        <div class="{{ post.card-color }}-card card h-100">
+                            <img alt="Author: {{ post.author }}" class="author"
+                                 src="assets/images/team/{{ post.author | downcase }}.jpg">
+                            {% if post.category %}<h5>{{ post.category }}</h5>{% endif %}
+                            <h4 class="card-title">{{ post.full-title }}</h4>
+                            {% if post.sub-title %}<p class="small">{{ post.sub-title }}</p>{% endif %}
+                            <p class="small bottom-text">
+                                By {{ post.full-name }} on {{ post.publish-date }}, {{ post.publish-year }}
+                            </p>
+                        </div>
+                    </a>
+                </div>
             {% endfor %}
         </div>
     </div>
