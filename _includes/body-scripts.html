@@ -1,0 +1,12 @@
+<script src="/assets/js/themeToggle.js"></script>
+<script src="/assets/js/prism.js"></script>
+<script>
+    function copyText(input) {
+        const text = document.createElement('textarea');
+        document.body.appendChild(text);
+        text.value = "https://developer.legaltech.wales" + input
+        text.select();
+        document.execCommand("copy");
+        document.body.removeChild(text);
+    }
+</script>

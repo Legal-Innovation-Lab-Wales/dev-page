@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/30fa2950fc.js"></script>
+    <link href="/assets/css/prism.css" rel="stylesheet">
+    <link href="/assets/css/blog.css" rel="stylesheet">
+    <title>{{ page.full-title }}</title>
+</head>
+<body class="blog">
+{% include blog-header.liquid %}
+
+<main>
+    <article>
+        {{ content }}
+    </article>
+</main>
+
+<footer>
+    {% include footer-logos.html %}
+</footer>
+{% include body-scripts.html %}
+</body>
+</html>

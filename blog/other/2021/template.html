@@ -1,0 +1,104 @@
+---
+layout: blog
+author: Phil
+full-name: Phil Reynolds
+short-title: challenge
+full-title: Technical Challenge
+sub-title: (and updating the process)
+file-type: html
+publish-date: June 3
+publish-year: 2021
+card-color: orange
+---
+<h1>Template Title</h1>
+<p class="subheading">A brief introduction paragraph summarising what the blog post is about. A one or two
+    sentence tl;dr: to help the reader know whether or not its going to be a useful article to read. </p>
+<p><em>Note: </em>This is a living guide. We follow these steps on a day-to-day basis. We will tweak and
+    update this guide as we go along and learn form our mistakes</p>
+
+<h2>h2 Start on Jira</h2>
+
+<p>After a feature is outlined or described by stakeholders it will be added to the <em>Backlog</em>
+    column on Jira. When creating the ticket, as much detail as possible should be given. We won’t
+    always be able to provide a full user story, but give as much information as you can as early as you
+    can. The backlog column is roughly prioritised with the more urgent tasks appearing towards the top.
+</p>
+
+<h3>h3 Teams</h3>
+
+<p>We’ll try and post here fairly regularly. For now, we’re going to have an index on our developer page
+    <i aria-hidden="true" class="fas fa-code"></i> and we’ll post update on Twitter at the least. If you would
+    like email updates then <a href="mailto:legalinnovation@swansea.ac.uk"> please let us know!
+        <i aria-hidden="true" class="fas fa-envelope"></i></a></p>
+
+<h4>h4 Chats</h4>
+
+<p>The main communication in teams happens in chats. <strong>These are informal conversations about a
+    range of topics</strong> with specific people or groups of people. We have a Dev Team chat and a
+    Legal Tech chat which are used most frequently.</p>
+
+<h4>Channels</h4>
+
+<p>Channels are a more structured way of having conversations around a specific topic. The nature of
+    channels is more persistent and asynchronous. We should use channels for <strong>discussions around
+        specific topics</strong> which aren’t necessarily related to a task in Jira.</p>
+
+
+<h3>Planner</h3>
+
+<p>We can check for system preferences using <code class="inline">window.matchMedia("(prefers-color-scheme:
+    dark)");</code> and we can get
+    any previous site preference from local storage <code class="inline">localStorage.getItem("theme");</code>. So the
+    first things we are
+    going to do in our script is assign these to variables, and create a variable for our toggle button.</p>
+
+<p>This is public within the Swansea.ac.uk domain so anyone can see what we are working on.</p>
+
+<p>The cards link to further documents in OneDrive / Sharepoint which provide further detail on the
+    project.</p>
+
+<p>Planner doesn’t feel like the best tool for this but its the best we have at the moment - if anyone
+    has any suggestions then please share!</p>
+
+<h3>Jira</h3>
+
+<p>Jira is our main software development project management tool. This is where the day-to-day of our
+    dev team happens. We have several boards where individual cards correspond to individual tasks.
+    These cards are often referred to interchangeably as tasks, issues or tickets.</p>
+
+<p>The main Dev Team board is for general tasks which don’t relate to any specific project, or relate to
+    projects which are not mature enough to warrant their own board. We also have separate boards for
+    other ongoing projects, currently the Scenario Platform and the Include Journey.</p>
+
+<p>On these project specific boards, each issue card should relate to one specific feature, bug or task.
+    This normally equates to one Pull Request on GitHub.</p>
+
+<p>Jira is also where we have <strong>discussions related to specific tasks.</strong> Comments can guide
+    the conversation while the description can be updated collaboratively with improvements from the comments.
+</p>
+
+<h3>GitHub</h3>
+
+<p>We use GitHub for version control, code repositories and peer reviews of our code.</p>
+
+<h4>Code example</h4>
+<pre><code class="language-js">function setTheme() {
+    //if no local storage check against system preferences
+    if (currentTheme === null) {
+        if (prefersDarkScheme.matches) {
+            currentTheme = "dark"
+        } else if (prefersLightScheme.matches) {
+            currentTheme = "light"
+        } else {
+            // if no preferences, default to dark theme
+            currentTheme = "dark"
+        }
+        setTheme()
+    } else if (currentTheme === "dark") {
+        document.body.classList.remove("light-mode");
+        document.body.classList.add("dark-mode");
+    } else if (currentTheme === "light") {
+        document.body.classList.remove("dark-mode");
+        document.body.classList.add("light-mode");
+    }
+}</code></pre>

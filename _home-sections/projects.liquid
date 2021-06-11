@@ -1,0 +1,34 @@
+<section class="row py-5" id="projects">
+    <div class="col">
+        <div class="title">
+            <h2><span class="link-spacer"></span>Projects
+                <button class="copyLink" onclick="copyText('#projects')"><i class="fas fa-link"></i></button>
+            </h2>
+            <p class="lead">These are the projects which we have worked on or contributed to.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 card-row">
+
+            {% for project in site.data.projects %}
+                <div class="col">
+                    <div class="card h-100">
+                        <h3 class="card-title">{{ project.name }}</h3>
+                        <div class="description">
+                            <h5>Overview</h5>
+                            {{ project.overview | markdownify }}
+                            <h5>Tech stack</h5>
+                            <p>{{ project.tech-stack | markdownify }}</p>
+                        </div>
+                        <a class="btn status {{ project.status | downcase }} mt-auto"
+                           href="{{ project.link }}">{{ project.status }}</a>
+                        {% if project.open-source %}
+                            <a class="btn repo" href="{{ project.github }}">Source
+                                Code <i class="fab fa-github"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>

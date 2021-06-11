@@ -1,0 +1,591 @@
+/* *** Variables *** */
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+/* University Colors */
+$ink: #212529;
+$navy: #242F60;
+$sky-blue: #93c9de;
+$lime: #CAD401;
+$gray: #DDDDDD;
+$green: #378137;
+$orange: #F2A53F;
+$red: #E00000;
+$white: #ffffff;
+$light-gray: #fcfcfc;
+$dark-gray: #495087;
+$white-hover: #b3b3b3;
+
+/* Page Colours */
+
+$deep-purple: #210047;
+
+$projects-background: linear-gradient(100deg, $deep-purple, $navy, #020758);
+$approach-background: linear-gradient(100deg, #0e182a, $deep-purple);
+
+$green-grad: linear-gradient(100deg, #439D43, #70C270);
+$navy-grad: linear-gradient(100deg, #3E50A3, #4E62BC);
+$repo-button-grad: linear-gradient(100deg, $dark-gray, $navy);
+
+// Colours from https://htmlcolorcodes.com/color-chart/flat-design-color-chart/
+
+// Peter river
+$blue-card-light-1: #d6eaf8;
+$blue-card-light-2: #aed6f1;
+$blue-card-light-3: #85c1e9;
+$blue-card-background: $blue-card-light-1;
+$blue-card-background-2: linear-gradient(35deg, $blue-card-light-1, $blue-card-light-2);
+$blue-card-text: #1b4f72;
+
+// Custom dark blue
+$blue-dark-card-background: $deep-purple;
+$blue-dark-card-background-2: linear-gradient(100deg, $navy, $deep-purple);
+$blue-dark-card-text: $blue-card-light-1;
+
+// Green sea
+$green-card-light-1: #d0ece7;
+$green-card-light-2: #a2d9ce;
+$green-card-light-3: #73c6b6;
+$green-card-background: $green-card-light-1;
+$green-card-background-2: linear-gradient(35deg, $green-card-light-1, $green-card-light-2);
+$green-card-text: #0b5345;
+
+// Emerald
+$green-2-card-light-1: #d5f5e3;
+$green-2-card-light-2: #abebc6;
+$green-2-card-light-3: #82e0aa;
+$green-2-card-background: $green-2-card-light-1;
+$green-2-card-background-2: linear-gradient(35deg, $green-2-card-light-1, $green-2-card-light-2);
+$green-2-card-text: #186a3b;
+
+// Amethyst
+$purple-card-light-1: #ebdef0;
+$purple-card-light-2: #d7bde2;
+$purple-card-light-3: #c39bd3;
+$purple-card-background: $purple-card-light-1;
+$purple-card-background-2: linear-gradient(35deg, $purple-card-light-1, $purple-card-light-2);
+$purple-card-text: #512e5f;
+
+//Sunflower
+$yellow-card-light-1: #fcf3cf;
+$yellow-card-light-2: #f9e79f;
+$yellow-card-light-3: #f7dc6f;
+$yellow-card-background: $yellow-card-light-1;
+$yellow-card-background-2: linear-gradient(35deg, $yellow-card-light-1, $yellow-card-light-2);
+$yellow-card-text: #7d6608;
+
+// Pumpkin
+$orange-card-light-1: #f6ddcc;
+$orange-card-light-2: #edbb99;
+$orange-card-light-3: #e59866;
+$orange-card-background: $orange-card-light-1;
+$orange-card-background-2: linear-gradient(35deg, $orange-card-light-1, $orange-card-light-2);
+$orange-card-text: #6e2c00;
+
+// Pomegranate
+$red-card-light-1: #f2d7d5;
+$red-card-light-2: #e6b0aa;
+$red-card-light-3: #d98880;
+$red-card-background: $red-card-light-1;
+$red-card-background-2: linear-gradient(35deg, $red-card-light-1, $red-card-light-2);
+$red-card-text: #7b241c;
+
+.navbar > .container, .navbar > .container-fluid {
+  justify-content: flex-start;
+}
+
+/* *** General CSS *** */
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/130875-blue-polygon-background.jpg");
+    background-size: cover;
+    filter: opacity(0.85);
+  }
+
+  .header-content {
+    position: relative;
+  }
+
+  .section-links {
+    a {
+      text-decoration: none;
+      color: $white;
+      font-weight: 700;
+
+      &:hover {
+        color: $gray;
+
+      }
+    }
+  }
+
+  .social {
+    margin-top: 1rem;
+
+    a {
+      text-align: center;
+      height: 3rem;
+      width: 3rem;
+      background: #ffffffe6;
+      box-shadow: 6px 4px 8px 0 #0006;
+      border-radius: 100%;
+      line-height: 3rem;
+      color: $dark-gray;
+
+      &:hover {
+        color: $ink;
+        background: rgba(255, 255, 255, 1);
+        box-shadow: none;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+main {
+  .title {
+    text-align: center;
+  }
+
+  h2, h3 {
+    font-weight: 700;
+  }
+
+  h2 {
+    .link-spacer {
+      margin-left: 45px;
+    }
+
+    button {
+      visibility: hidden;
+      border: none;
+    }
+
+    &:hover {
+      button {
+        visibility: visible;
+        color: $dark-gray;
+        background-color: inherit;
+      }
+    }
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  .card {
+    padding: 1rem;
+    text-align: center;
+    border: none;
+  }
+
+  section.row {
+    margin: 0;
+  }
+
+  #documents {
+
+    .card-row {
+      max-width: 600px;
+      @media (min-width: $breakpoint-xl) {
+        max-width: 900px;
+      }
+
+      .col {
+        max-width: 300px;
+        @media (max-width: $breakpoint-md) {
+          margin-left: auto;
+          margin-right: auto;
+
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        &:nth-child(1) .card {
+          background: $blue-card-background;
+          color: $blue-card-text;
+
+          &:hover {
+            background: $blue-card-background-2;
+          }
+        }
+
+        &:nth-child(2) .card {
+          background: $yellow-card-background;
+          color: $yellow-card-text;
+
+          &:hover {
+            background: $yellow-card-background-2;
+          }
+        }
+
+        &:nth-child(3) .card {
+          background: $orange-card-background;
+          color: $orange-card-text;
+
+          &:hover {
+            background: $orange-card-background-2;
+          }
+        }
+
+        &:nth-child(4) .card {
+          background: $purple-card-background;
+          color: $purple-card-text;
+
+          &:hover {
+            background: $purple-card-background-2;
+          }
+        }
+
+        &:nth-child(5) .card {
+          background: $green-2-card-background;
+          color: $green-2-card-text;
+
+          &:hover {
+            background: $green-2-card-background-2;
+          }
+        }
+
+        &:nth-child(6) .card {
+          background: $red-card-background;
+          color: $red-card-text;
+
+          &:hover {
+            background: $red-card-background-2;
+          }
+        }
+      }
+    }
+  }
+
+  #projects {
+    color: $white;
+    background: $projects-background;
+
+    .card {
+      color: $ink;
+
+      .btn {
+        width: 160px;
+        margin: 0.2rem auto;
+        font-weight: 700;
+
+        &.status {
+          color: $white;
+
+          &.released {
+            background: $green;
+
+            &:hover {
+              background: $green-grad;
+            }
+          }
+
+          &.demo {
+            background: $navy;
+
+            &:hover {
+              background: $navy-grad;
+            }
+          }
+
+          &.development {
+            background: $orange;
+          }
+        }
+
+        &.repo {
+          background: #24292e;
+          color: $white;
+
+          &:hover {
+            background: $repo-button-grad;
+          }
+        }
+      }
+    }
+  }
+
+  #blog {
+    .card-row {
+
+      .col {
+        width: 300px;
+        @media (max-width: $breakpoint-md) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        a {
+          text-decoration: none;
+        }
+        .card {
+          img {
+            display: block;
+            margin: 0 auto;
+            &.author {
+              border-radius: 100%;
+              height: 2rem;
+              width: 2rem;
+              @media (min-width: $breakpoint-lg) {
+                height: 2.6rem;
+                width: 2.6rem;
+              }
+            }
+          }
+          &.blue-card {
+            background: $blue-card-background;
+            color: $blue-card-text;
+
+            &:hover {
+              background: $blue-card-background-2;
+            }
+          }
+
+          &.blue-dark-card {
+            background: $blue-dark-card-background;
+            color: $blue-dark-card-text;
+
+            &:hover {
+              background: $blue-dark-card-background-2;
+            }
+          }
+
+          &.yellow-card {
+            background: $yellow-card-background;
+            color: $yellow-card-text;
+
+            &:hover {
+              background: $yellow-card-background-2;
+            }
+          }
+
+          &.orange-card {
+            background: $orange-card-background;
+            color: $orange-card-text;
+
+            &:hover {
+              background: $orange-card-background-2;
+            }
+          }
+
+          &.purple-card {
+            background: $purple-card-background;
+            color: $purple-card-text;
+
+            &:hover {
+              background: $purple-card-background-2;
+            }
+          }
+
+          &.green-card {
+            background: $green-card-background;
+            color: $green-card-text;
+
+            &:hover {
+              background: $green-card-background-2;
+            }
+          }
+
+          &.green-2-card {
+            background: $green-2-card-background;
+            color: $green-2-card-text;
+
+            &:hover {
+              background: $green-2-card-background-2;
+            }
+          }
+
+          &.red-card {
+            background: $red-card-background;
+            color: $red-card-text;
+
+            &:hover {
+              background: $red-card-background-2;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #approach {
+    color: $white;
+    background: $approach-background;
+
+    a {
+      font-weight: 700;
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  article {
+    max-width: 36rem;
+    font-size: 1.1rem;
+
+    h4 {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+
+      em {
+        font-weight: 700;
+      }
+
+      a {
+        font-weight: 700;
+        color: $white;
+        text-decoration: none;
+        font-style: italic;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    blockquote {
+      color: $gray;
+      border-left: 0.2rem solid $gray;
+      padding-left: 0.5rem;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+pre {
+  max-height: 36rem;
+}
+/* *** FOOTER *** */
+
+footer {
+  background-color: $white;
+  padding-bottom: 0;
+
+  /* Main Footer */
+
+  .links {
+    margin: 0;
+    padding: 60px 0;
+    height: auto;
+    background-color: $navy;
+    background-image: url("../images/waves-bg.svg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: 5% 15%;
+    color: $white;
+    text-align: left;
+    position: relative;
+
+    .inner {
+      margin: 0 auto;
+      position: relative;
+    }
+
+    ul {
+      margin: 0;
+      display: block;
+
+      li {
+        display: inline-block;
+        margin: 0 5px 0 0;
+        padding: 0;
+        background: none;
+
+        a {
+          color: $white;
+          transition: .2s;
+          position: relative;
+          top: 0;
+
+          &:hover {
+            text-decoration: none;
+            top: -2px;
+            /*color: #b3b3b3;*/
+            color: $white-hover;
+          }
+
+          &:visited {
+            color: $white;
+          }
+        }
+      }
+    }
+
+    .footer-links-list, .footer-info-list {
+      margin-bottom: 20px;
+
+      li::after {
+        content: "|";
+        margin-left: 5px;
+      }
+
+      li:last-child::after {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      display: block;
+    }
+  }
+
+  .logos {
+    padding: 20px 0;
+    background-color: $white;
+
+    .col {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      img {
+        /*float: right;*/
+        max-width: 160px;
+
+        &.erdf {
+          @media (min-width: $breakpoint-md) {
+            margin-left: 48px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  short-title: welcome
+  full-title: Welcome to the Blog
+  file-type: html
+  publish-date: May 20
+  publish-year: 2021
+  card-color: blue
+
+- author: Phil
+  full-name: Phil Reynolds
+  short-title: directory-of-expertise
+  full-title: 'One Day Build: Directory of Expertise'
+  file-type: html
+  publish-date: January 3
+  publish-year: 2021
+  card-color: orange
+
+- layout: blog
+  author: Alex
+  full-name: Alex Wing
+  short-title: agile
+  full-title: Agile Working
+  file-type: html
+  publish-date: January 20
+  publish-year: 2021
+  card-color: green
+
+- layout: blog
+  author: Ieuan
+  full-name: Ieuan Skinner
+  short-title: challenge
+  full-title: Technical Challenge
+  file-type: html
+  publish-date: February 3
+  publish-year: 2021
+  card-color: yellow
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  short-title: build-a-feature
+  full-title: Our Approach
+  sub-title: How To Build a Feature
+  file-type: html
+  publish-date: May 11
+  publish-year: 2021
+  tag: approach
+  card-color: blue-dark
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  short-title: tooling
+  full-title: Our Approach
+  sub-title: Tools We Use
+  file-type: html
+  publish-date: May 18
+  publish-year: 2021
+  tag: approach
+  card-color: blue-dark
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  short-title: theme-toggle
+  full-title: Javascript Dark Mode Toggle
+  file-type: html
+  publish-date: May 20
+  publish-year: 2021
+  card-color: orange
+
+- layout: blog
+  author: Gareth
+  full-name: Gareth Andrews
+  short-title: challenge
+  full-title: Technical Challenge
+  file-type: html
+  publish-date: May 25
+  publish-year: 2021
+  card-color: purple
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  short-title: challenge
+  full-title: Technical Challenge
+  sub-title: (and updating the process)
+  file-type: html
+  publish-date: June 3
+  publish-year: 2021
+  card-color: orange
+

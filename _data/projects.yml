@@ -1,0 +1,96 @@
+- name: Expertise Directory
+  status: Released
+  link: https://directoryofexpertise.legaltech.wales/
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/expertise-directory
+  overview: |
+    A web application that collates the "Areas of Expertise" that live on individual staff member profiles into a single
+    page and allows them to be filtered with a free text box and department dropdown.
+
+    There are quite a few limitations to this work. As it is a web scraper it is dependent on the Swansea University
+    website for its information, if the website structure changes it will stop working.
+
+    At the moment it only covers the Hillary Rodham Clinton School of Law, the College of Science and the College of
+    Arts and Humanities, the other colleges display their staff profiles in a different structure and so will need to be
+    added in time.
+  tech-stack: |
+    A collection of web scraping python scripts are run daily by a GitHub Action, this generates a JSON file. The
+    updated file is picked up by Netlify which hosts the website. The front end is a React web application that pulls
+    the data out of the JSON into an HTML table.
+
+- name: Scenario Platform
+  status: Demo
+  link: https://scenario-platform.legaltech.wales/
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/scenario-platform
+  overview: |
+    A Tool to help user practice specific scenarios, such as interviewing a client, approaching a medical situation or
+    facing something where they have performed poorly in the past.
+
+    The key requirements were that it could have a **branching non-linear structureand that each answer could influence
+    a range of variables.**
+
+    During the initial research we spoke with another partner who was looking for a very similar tool to allow people to
+    practice challenging scenarios where they had acted illegally in the past with the aim of helping facilitate their
+    rehabilitation journey and prevent reoffending.
+  tech-stack: |
+    Ruby on Rails web app with Devise for user authentication.
+
+- name: Judiciary Tagger
+  status: Released
+  link: https://akn-judiciary-demo.legaltech.wales/
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/judiciary-akn-tagger
+  overview: |
+    This repository contains the application code for the Judiciary Akn Tagger (JAT). This application contains 101 case
+    law files from https://www.judiciary.uk tagged in the Akoma Ntoso XML standard.
+  tech-stack: |
+    Composed of a Java back-end and React front-end, the data-sources for this application come from a combination of an
+    Ontology Model, and the aforementioned XML files.
+
+    **Note:** This app goes into hibernation when not in use, if it hasn't loaded in about 60s give the page a refresh
+
+- name: Include Journey
+  status: Demo
+  link: https://include-journey-demo.legaltech.wales/
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/include-journey
+  overview: |
+    *By Gemma Morgan* At present criminal justice agencies both in the UK and internationally do not fully realise the
+    opportunities that digital technologies offer to improve service delivery and the lives of service users. As a
+    result, there has been little digital innovation within the realms of offender rehabilitation.
+
+    The development and implementation of digital technologies in the area of offender rehabilitation are cutting edge.
+    Currently, there is little to no innovation in this  area. As such, a range of technology can be developed to
+    support organisations and their ervice users.
+  tech-stack: |
+    Ruby on Rails web app with Devise for user authentication.
+
+- name: Privacy Demo
+  status: Released
+  link: https://include-journey-demo.legaltech.wales/
+  open-source: false
+  github: https://github.com/Legal-Innovation-Lab-Wales/include-journey
+  overview: |
+    Privacy Policies suck. No one wants to read them. We're trying to make them better with this idea.
+
+    Human readable information for humans and a link to a broad policy available for those who want and need it.
+  tech-stack: |
+    HTML + CSS, Hosted on Netlify
+
+- name: Regulatory Navigation Tool
+  status: Released
+  link: https://regulatory-navigation-tool.legaltech.wales/"
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/regulatory-navigation-tool/"
+  overview: |
+    [LawtechUK](https://technation.io/lawtechuk/") launched an interactive PDF to help "those innovating in law to
+    navigate the regulatory landscape". You can read about it and see the [original PDF tool here](https://technation.io/news/launching-lawtech-regulatory-navigation-tool/)
+
+    This original is a wealth of knowledge and an incredible tool, however we discovered it had several compatibility
+    issues in a range of browsers.
+
+    In a 1-day build, Ieuan took this tool and rebuilt it with ReactJS. After checking with LawtechUK its now live on
+    the web.
+  tech-stack: |
+    ReactJS, Hosted on Netlify

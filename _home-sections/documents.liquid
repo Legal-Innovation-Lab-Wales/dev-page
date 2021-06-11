@@ -1,0 +1,24 @@
+<section class="row py-5" id="documents">
+    <div class="col-12 col-md-10 mx-auto">
+        <div class="title">
+            <h2><span class="link-spacer"></span>Documents
+                <button class="copyLink" onclick="copyText('#documents')"><i class="fas fa-link"></i></button>
+            </h2>
+            <p class="lead">These documents outline various aspects of our work and are often shared publicly. Their
+                master versions live on Lucidchart and they can be edited there. They are hosted on
+                media.legaltech.wales </p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mx-auto card-row">
+            {% for doc in site.data.documents %}
+                <div class="col">
+                    <a href="{{ doc.url }}" target="_blank">
+                        <div class="card h-100">
+                            <h4 class="card-title">{{ doc.title }}</h4>
+                            <p class="small">{{ doc.description }}</p>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
