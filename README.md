@@ -26,7 +26,7 @@ The website is currently live at [developer.legaltech.wales](https://developer.l
 
 The core technologies used for this project are:
 
-* Ruby (2.7.2) (we recommend using rbenv for managing Ruby versions)
+* Ruby (2.7.3) (we recommend using rbenv for managing Ruby versions)
 * Jekyll
 
 ---
@@ -51,9 +51,9 @@ You should now be able to view the main web page at
 ### Other Potential Fixes
 
 
-You might need to manually install Jekyll on your system with:
+You might need to manually install Jekyll and Bundler on your system with:
 ```
-gem install jekyll
+gem install bundler jekyll
 ```
 
 Further information about jekyll can be found [here](https://jekyllrb.com/docs/installation/)
@@ -74,15 +74,17 @@ Navigate to the local blog folder and create a user & year if it doesn't already
 Make sure the file is formatted to the correct standard so it can be rendered properly. Look at the other existing blogs
 for examples of how to format or lookup the guides for  [markdown](https://daringfireball.net/projects/markdown/) / [html](https://www.w3schools.com/html/).
 
-The start of the file will need to include some yml at the top of the file such as this
+The start of the file will need to include some yaml "front matter" at the top of the file, such as this:
 
-```angular2html
+```yaml
 ---
 layout: blog
-author: Alex
+author: Alex # This links to your image and your blog posts subfolder
 full-name: Alex W
-short-title: agile
-full-title: Agile Working
+category: One Day Build # Optional. Provides smaller header on card, and if "Our Approach" also adds article to home page
+short-title: agile # This is the url title of your post
+full-title: Agile Working # Title on the card on the homepage
+sub-title: (during the pandemic) # Optional: adds subtitle to card on homepage
 file-type: html
 publish-date: January 20
 publish-year: 2021
@@ -90,8 +92,8 @@ card-color: green
 ---
 ```
 
-Finally, you will need to copy the same information and add it too blogposts.yml file under dev-page/_data.
+Finally, you will need to copy the same yaml information and add it to `blogposts.yml` file under `dev-page/_data`. The `/_data` file is used to generate the blog index on the home page. 
 
-### Publishing the post live.
+### Publishing the post.
 Once you have checked your post works on your local site and you have checked you can navigate to it.  Then you can submit
 a pull request to this repository. The post will be then be reviewed.
