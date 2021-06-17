@@ -5,7 +5,7 @@ full-name: Alex Wing
 short-title: Remote
 full-title: Remote Working and Collaboration
 file-type: md
-publish-date: June 1
+publish-date: June 17
 publish-year: 2021
 card-color: green
 ---
