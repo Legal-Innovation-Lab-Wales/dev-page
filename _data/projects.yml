@@ -80,9 +80,9 @@
 
 - name: Regulatory Navigation Tool
   status: Released
-  link: https://regulatory-navigation-tool.legaltech.wales/"
+  link: https://regulatory-navigation-tool.legaltech.wales/
   open-source: true
-  github: https://github.com/Legal-Innovation-Lab-Wales/regulatory-navigation-tool/"
+  github: https://github.com/Legal-Innovation-Lab-Wales/regulatory-navigation-tool/
   overview: |
     [LawtechUK](https://technation.io/lawtechuk/") launched an interactive PDF to help "those innovating in law to
     navigate the regulatory landscape". You can read about it and see the [original PDF tool here](https://technation.io/news/launching-lawtech-regulatory-navigation-tool/)
@@ -94,3 +94,49 @@
     the web.
   tech-stack: |
     ReactJS, Hosted on Netlify
+
+- name: DRAGON-Spotter
+  status: Development
+  link: https://www.swansea.ac.uk/project-dragon-s/
+  open-source: false
+  overview: |
+    Words by Principal investigator: Professor Nuria Lorenzo-Dus
+
+    The Spotter tool will integrate Linguistics and AI to detect online grooming content, pinpointing the manipulative language tactics that groomers use: from making children feel emotionally isolated to communicating sexual intent implicitly and explicitly to them.
+
+    The Spotter tool will aid law enforcement’s online grooming detection work.
+
+    The Spotter tool will have a significant impact on our ability to keep children safe from online grooming, and successful tool development in English will furthermore pave the way for extension to other languages
+  tech-stack: |
+    Ruby on Rails front end which interfaces with a ML classification model.
+
+- name: KIID Onboarding Tool
+  status: Development
+  link: https://zeidler.group/insights/zeidler-group-announces-strategic-partnership-with-the-legal-innovation-lab-wales-to-build-ai-solutions-for-legal-delivery/
+  open-source: false
+  overview: |
+    In collaboration with the Zeidler Group. Words by Arne Zeidler:
+
+    The problem that we want to address is the onboarding process of existing Key Investor Information Documents (KIIDs) from new clients to our application.
+
+    At the moment, we have to copy and paste the content of each of the existing KIIDs into an excel based "standing data form", which is then uploaded to our application. This is an extremely time-consuming process, which can take months,and even with the greatest level of care, it is prone to human errors.
+
+    The idea is to use AI to read the KIIDs in bulk and understand the sections so that our application can automatically populate the right areas of the database with the appropriate sections, including formatted text and numbersfrom the KIIDs.
+
+    In summary, the idea is an automated onboarding process based on the "understanding" of the documents.
+
+  tech-stack: |
+    Java web app hosted on Heroku using Apache Maven and NodeJS.
+
+- name: DRAGON-Sheild
+  status: Planning
+  link: https://www.swansea.ac.uk/project-dragon-s/
+  open-source: false
+  overview: |
+    Words by Principal investigator: Professor Nuria Lorenzo-Dus
+
+    The Shield tool will relay specialist knowledge to child safeguarding professionals about groomers’ and children’s communicative behaviour during online grooming through a learning portal. It will also include a Linguistics/AI powered chatbot.
+
+    The Shield tool will strengthen child safeguarding professionals’ ability to prevent children from being sexually groomed online. It will also allow end users to understand and better trust the AI decision-making process when identifying online grooming content.
+  tech-stack: |
+    Likely to be a Ruby on Rails web app.
