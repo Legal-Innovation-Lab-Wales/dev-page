@@ -68,9 +68,9 @@
 
 - name: Privacy Demo
   status: Released
-  link: https://include-journey-demo.legaltech.wales/
+  link: https://developer.legaltech.wales/privacy-demo.html
   open-source: false
-  github: https://github.com/Legal-Innovation-Lab-Wales/include-journey
+  github:
   overview: |
     Privacy Policies suck. No one wants to read them. We're trying to make them better with this idea.
 
@@ -80,7 +80,7 @@
 
 - name: Regulatory Navigation Tool
   status: Released
-  link: https://regulatory-navigation-tool.legaltech.wales/
+  link: https://regulatory-navigation-tool.legaltech.wales
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/regulatory-navigation-tool/
   overview: |
