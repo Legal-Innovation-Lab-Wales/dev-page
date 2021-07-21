@@ -187,6 +187,9 @@ html body main article p.subheading {
   font-size: 1.2rem;
   font-weight: 200;
 }
+html body main article img {
+  max-width: 100%;
+}
 @media (min-width: 992px) {
   html body main article {
     padding: 0;
