@@ -105,3 +105,14 @@
   publish-year: 2021
   card-color: green
 
+- layout: blog
+  author: Gareth
+  full-name: Gareth Andrews
+  short-title: dotnet-to-rails
+  full-title: .NET Core to Ruby on Rails
+  file-type: html
+  publish-date: Jul 20
+  publish-year: 2021
+  card-color: purple
+
+  
