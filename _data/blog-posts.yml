@@ -115,4 +115,12 @@
   publish-year: 2021
   card-color: purple
 
-  
+- layout: blog
+  author: Ieuan
+  full-name: Ieuan Skinner
+  short-title: java-to-ruby
+  full-title: from Java ☕ to Ruby 💎
+  file-type: html
+  publish-date: July 27
+  publish-year: 2021
+  card-color: yellow
