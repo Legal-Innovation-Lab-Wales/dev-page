@@ -312,6 +312,10 @@ main {
           &.development {
             background: $orange;
           }
+
+          &.planning {
+            background: $lime;
+          }
         }
 
         &.repo {

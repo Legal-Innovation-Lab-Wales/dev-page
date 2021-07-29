@@ -267,6 +267,9 @@ html {
             font-weight: 200;
           }
         }
+        img {
+          max-width: 100%;
+        }
 
         @media (min-width: $breakpoint-lg) {
           padding: 0;

@@ -176,6 +176,9 @@ main #projects .card .btn.status.demo:hover {
 main #projects .card .btn.status.development {
   background: #F2A53F;
 }
+main #projects .card .btn.status.planning {
+  background: #CAD401;
+}
 main #projects .card .btn.repo {
   background: #24292e;
   color: #ffffff;
