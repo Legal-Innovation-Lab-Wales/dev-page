@@ -124,3 +124,13 @@
   publish-date: July 27
   publish-year: 2021
   card-color: yellow
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  short-title: extended-theme-toggle
+  full-title: Extending the Theme Switch
+  file-type: html
+  publish-date: August 2
+  publish-year: 2021
+  card-color: orange
