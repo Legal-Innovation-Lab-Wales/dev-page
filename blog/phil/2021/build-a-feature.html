@@ -36,9 +36,9 @@ card-color: blue-dark
 
 <p>When you are happy with the detail on the ticket, move the ticket to <em>In Progress</em>.</p>
 
-<h4>Move to GitHub</h4>
+<h4>Developing the Feature</h4>
 
-<p><strong>Guides:</strong> <a href="https://guides.github.com/introduction/flow/">How and Why</a>, <a
+<p><strong>Git Guides:</strong> <a href="https://guides.github.com/introduction/flow/">How and Why</a>, <a
         href="https://guides.github.com/introduction/git-handbook/">Handbook</a></p>
 
 <p class="mb-0">Ensure your local branches are up to date then <em>create a new branch</em> for your
@@ -57,17 +57,13 @@ card-color: blue-dark
     improvement and should be made when the codebase is in a state which you want to remember. Each
     commit which directly relates to the task should have the ticket ID at the start of it.</p>
 
-<p>As you are working on the feature, build it to the best of your ability, leveraging your experience,
-    creativity and ingenuity. If something comes up which you are uncertain about, or if you think of
-    something which could be a good addition to the feature, go back to the ticket on Jira and ask about
-    it there.</p>
+<p>As you are working on the feature, build it to the best of your ability, leveraging your experience, creativity and ingenuity. If something comes up which you are uncertain about, or if you think of something which could be a good addition to the feature, go back to the ticket on Jira and ask about it there.</p>
 
-<p>When you’ve finished work on the ticket, push your code to GitHub and <b>create a pull request</b>
-    (PR). Your PR title should contain the ticket ID and a short title, probably similar to the ticket
-    title. The description of your PR should be an explanation of what you have done and how, including
-    screenshots if there is a front end / UI component. Then request a review from the rest of the team.
-    PRs are designed for the team to check your code makes sense, does everything its supposed to and
-    meets our standards.</p>
+<p>There are a couple of principles which we try and follow when building features. Most of which are common software development principles: <a href="https://en.wikipedia.org/wiki/KISS_principle">KISS</a>, <a href=https://en.wikipedia.org/wiki/Single-responsibility_principle">SRP</a>, and <a https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>. One that is less common is what I call "Build something Beautiful". This realates to the principle Rails' docterine of optimising for developer happiness.</p>
+
+<p>Build Something Beautiful is about writing beautiful code, but more importantly about thinking about the interface first. No one really likes testing functionality on something which has no styling, so its worth investing the time to consider the interface first and style the project earlier rather than later. Make it beautiful! The interface is the product, its what the end user is going to see. It's going to constantly be revised through the process but having something there from the start makes everything else easier and more enjoyable</p>
+
+<p>When you’ve finished work on the ticket, push your code to GitHub and <b>create a pull request</b> (PR). Your PR title should contain the ticket ID and a short title, probably similar to the ticket title. The description of your PR should be an explanation of what you have done and how, including screenshots if there is a front end / UI component. Then request a review from the rest of the team. PRs are designed for the team to check your code makes sense, does everything its supposed to and meets our standards.</p>
 
 <p><em>From the “How and Why” Guide:</em></p>
 <blockquote>
