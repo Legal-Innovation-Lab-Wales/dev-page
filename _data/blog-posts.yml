@@ -134,3 +134,13 @@
   publish-date: August 2
   publish-year: 2021
   card-color: orange
+
+- layout: blog
+  author: Alex
+  full-name: Alex Wing
+  short-title: academic-to-practical
+  full-title: Moving from academic to the practical code
+  file-type: html
+  publish-date: September 8
+  publish-year: 2021
+  card-color: green
