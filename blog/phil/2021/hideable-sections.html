@@ -12,28 +12,30 @@ card-color: orange
 
 <h1>Simple Javascript Hideable Sections</h1>
 <p class="subheading">Bootstrap has a very helpful <a href="https://getbootstrap.com/docs/5.0/components/collapse/">"collapse"</a>
-    class. However, where possible I'm tyring to avoid using large frameworks for the sake of line or two of code. </p>
+    class. However, where possible I'm trying to avoid using large frameworks for the sake of line or two of code. </p>
 
-<p>I don't feel as though there is any need to load in an entire library or framework if you are only looking to use one
-    or two features. Its lazy programming to do this. Often it can facilitate an increase of pace if you're looking to
-    develop something quickly, but in these cases I will always strongly advocate for a reduction in scope rather than
-    bolting on additional libraries and frameworks which have potential to impact user experience or introduce
-    vulnerabilities further down the road.</p>
+<p>There's no need to load in an entire library or framework if you are only looking to use one or two features. It's
+    lazy programming to do this. Often it can facilitate an increase of pace if you're looking to develop something
+    quickly, but in these cases I will always strongly advocate for a reduction in scope rather than bolting on
+    additional libraries and frameworks which have potential to impact user experience or introduce vulnerabilities
+    further down the road.</p>
 
-<p>In an <a href="/blog/phil/2021/build-a-prototype.html">upcoming post</a>, I was looking to add a small section which
-    was not important to the overall message of the article, but I wanted visitors to be able to read it should they
-    want. Look for the "How we build a Prototype" post when it goes live to see that use case.</p>
+<p>In an upcoming post <a href="/blog/phil/2021/build-a-prototype.html">(now released here)</a>, I was looking to add a
+    small section which was not important to the overall message of the article, but I wanted visitors to be able to
+    read it should they want. Look for the "How we build a Prototype" post when it goes live to see that use case.</p>
 
-<p>I've used the Bootstrap collapse functionality extensively in the past, however always when I've been leveraging the
-    full toolkit. For our developer blog, one of the key aims is to keep it as lightweight as possible. We use Jekyll as
-    a <a href="https://www.cloudflare.com/en-gb/learning/performance/static-site-generator/">SSG</a> and have as little
-    JS running as possible. We have bootstrap on the main page for buttons and cards, but it's in the backlog to strip
-    this out and go back to basics.</p>
+<p>I've used the Bootstrap collapse functionality extensively in the past, however this has always been when I've been
+    leveraging the full toolkit or at least a lot of other helpers from it.</p>
 
-<p>To solve this problem without bootstrap, with Vanilla JS the first port of call, as with all problems like this was
+<p>For our developer blog, one of the key aims is to keep it as lightweight as possible. We use Jekyll as a <a
+        href="https://www.cloudflare.com/en-gb/learning/performance/static-site-generator/">SSG</a>and have as little JS
+    running as possible. We have Bootstrap on the main developer page for buttons and cards, but it's in the backlog to
+    strip this out and go back to basics.</p>
+
+<p>To solve this problem with Vanilla JS and no Bootstrap, the first port of call, as with all problems like this was
     a quick Google. The first result was from <a href="https://www.w3schools.com/howto/howto_js_collapsible.asp">W3Schools</a>.
     I'm always skeptical of W3Schools, and this page is a great example of why. The code is outdated and way
-    overcomplicated. There were also some stackoverflow results, but most were outdated or relying heavily on JQuery.
+    overcomplicated. There were also some stackoverflow results, but most were outdated or relying heavily on jQuery.
     (If you're unsure why this is a problem, have a look <a
             href="https://www.google.com/search?q=why+should+you+not+jquery">here</a>, ES6 is great.)</p>
 
