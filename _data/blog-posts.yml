@@ -124,3 +124,16 @@
   publish-date: July 27
   publish-year: 2021
   card-color: yellow
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  category: Our Approach
+  short-title: build-a-prototype
+  full-title: How We Build a Prototype
+  file-type: html
+  publish-date: September 22
+  publish-year: 2021
+  tag: approach
+  order: 1
+  card-color: blue-dark
