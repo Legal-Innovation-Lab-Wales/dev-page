@@ -61,14 +61,14 @@ main .title {
 main h2, main h3 {
   font-weight: 700;
 }
-main h2 .link-spacer {
+main h2 .link-spacer, main h3 .link-spacer {
   margin-left: 45px;
 }
-main h2 button {
+main h2 button, main h3 button {
   visibility: hidden;
   border: none;
 }
-main h2:hover button {
+main h2:hover button, main h3:hover button {
   visibility: visible;
   color: #495087;
   background-color: inherit;
@@ -324,6 +324,16 @@ main article blockquote {
 
 pre {
   max-height: 36rem;
+}
+
+.hideable {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.hideable.reveal {
+  max-height: 20rem;
+  transition: all 0.5s ease-in-out;
 }
 
 /* *** FOOTER *** */
