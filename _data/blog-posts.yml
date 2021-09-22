@@ -128,6 +128,16 @@
 - layout: blog
   author: Phil
   full-name: Phil Reynolds
+  short-title: extended-theme-switch
+  full-title: Extending the Theme Switch
+  file-type: html
+  publish-date: August 2
+  publish-year: 2021
+  card-color: orange
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
   short-title: hideable-sections
   full-title: Simple Javascript Hideable Sections
   file-type: html
