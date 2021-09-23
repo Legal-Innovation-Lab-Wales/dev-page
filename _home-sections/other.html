@@ -1,7 +1,81 @@
 <section class="row py-5" id="other">
     <div class="col-12 col-md-8 mx-auto">
         <h2 class="text-center">Other Helpful Bits</h2>
-        <h3> Javascript for Swapping Between Welsh and English</h3>
+
+        <h3 id="hideable-sections">Javascript for Hideable Sections
+            <button class="copyLink" onclick="copyText('#hideable-sections')"><i class="fas fa-link"></i></button>
+        </h3>
+        <p>Similar to bootstrap collapse, but way simpler.</p>
+        <pre><code class="language-js">
+function collapseElement(input) {
+    const section = document.querySelector(input);
+    section.classList.toggle("reveal")
+}
+        </code></pre>
+        <pre><code class="language-html">
+&lt;a onclick="collapseElement('#note')">Title of what to reveal &lt;i class="fas fa-chevron-down">&lt;/i>&lt;/a>
+&lt;p id="note" class="hideable">Revealable text content&lt;/p>
+        </code></pre>
+
+        <pre><code class="language-scss">
+.collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s cubic-bezier(0, 1, 0, 1);
+  &.collapse-show{
+    max-height: 20rem;
+    transition: all .5s ease-in-out;
+  }
+}
+        </code></pre>
+        <hr>
+
+        <h3 id="copy-anchor-links">Javascript for Copying Anchor Links on Click
+            <button class="copyLink" onclick="copyText('#copy-anchor-links')"><i class="fas fa-link"></i></button>
+        </h3>
+        <p>Show link icon on hover and copy anchor link to clipboard when clicked</p>
+        <pre><code class="language-js">
+function copyText(input) {
+    const text = document.createElement('textarea');
+    document.body.appendChild(text);
+    text.value = "https://developer.legaltech.wales" + input
+    text.select();
+    document.execCommand("copy");
+    document.body.removeChild(text);
+}
+        </code></pre>
+        <pre><code class="language-html">
+&lt;h3 id="copy-anchor-links">Javascript for copying anchor links on click
+    &lt;button class="copyLink" onclick="copyText('#copy-anchor-links')">&lt;i class="fas fa-link">&lt;/i>&lt;/button>
+&lt;/h3>
+        </code></pre>
+
+        <pre><code class="language-scss">
+  h2, h3 {
+    font-weight: 700;
+    .link-spacer {
+      margin-left: 45px;
+    }
+
+    button {
+      visibility: hidden;
+      border: none;
+    }
+
+    &:hover {
+      button {
+        visibility: visible;
+        color: $dark-gray;
+        background-color: inherit;
+      }
+    }
+  }
+        </code></pre>
+        <hr>
+
+        <h3 id="language-toggle"> Javascript for Swapping Between Welsh and English
+            <button class="copyLink" onclick="copyText('#language-toggle')"><i class="fas fa-link"></i></button>
+        </h3>
         <p>Used to power the language switcher on the LegalTech.Wales Squarespace site</p>
         <p><strong>Usage Note: </strong>add class="english-lang" to main body and class="english-lang" and
             class="welsh-lang hidden" to the respective sections. Then create a button to call the JS. </p>
@@ -46,7 +120,9 @@ function toggleLanguageMode () {
 }
             </code></pre>
         <hr>
-        <h3> Javascript for Theme Toggle</h3>
+        <h3 id="theme-toggle"> Javascript for Theme Toggle
+            <button class="copyLink" onclick="copyText('#theme-toggle')"><i class="fas fa-link"></i></button>
+        </h3>
         <p>Used to power the theme toggle on the developer blog</p>
         <p><em>Usage: </em>Use css classes .dark-mode and .light-mode to define the styles. Example is below the js.
             The script first checks to see if there is a local theme preference stored, then looks for any OS

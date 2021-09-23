@@ -155,14 +155,14 @@ html body main article h1 {
   font-size: 1.6rem;
   margin: 1rem 0;
 }
-html body main article h2, html body main article h3, html body main article h4 {
+html body main article h2, html body main article h3, html body main article h4, html body main article h5 {
   margin-bottom: 0;
 }
 html body main article h2 {
   font-size: 1.4rem;
 }
-html body main article h2 .link-spacer {
-  margin-left: 45px;
+html body main article h2.text-center {
+  text-align: center;
 }
 html body main article h2 button {
   visibility: hidden;
@@ -178,6 +178,9 @@ html body main article h3 {
 }
 html body main article h4 {
   font-size: 1.1rem;
+}
+html body main article h5 {
+  font-size: 1rem;
 }
 html body main article p {
   font-size: 1.1rem;
@@ -200,17 +203,31 @@ html body main article img {
   html body main article h2 {
     font-size: 1.8rem;
   }
+  html body main article h2.text-center {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+  html body main article h2 .link-spacer {
+    margin-left: 45px;
+  }
   html body main article h3 {
     font-size: 1.6rem;
   }
   html body main article h4 {
     font-size: 1.4rem;
   }
+  html body main article h5 {
+    font-size: 1.2rem;
+  }
   html body main article p {
     margin-top: 0;
   }
   html body main article p.subheading {
     font-size: 1.4rem;
+    font-weight: 200;
+  }
+  html body main article p.lead {
+    font-size: 1.3rem;
     font-weight: 200;
   }
 }
@@ -221,6 +238,15 @@ html body main article blockquote {
   color: #dfecf1;
   border-left: 0.2rem solid #dfecf1;
   padding-left: 0.5rem;
+}
+html body main article .hideable {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+html body main article .hideable.reveal {
+  max-height: 20rem;
+  transition: all 0.5s ease-in-out;
 }
 html body footer {
   margin-top: 5rem;

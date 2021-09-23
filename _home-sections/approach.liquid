@@ -1,5 +1,5 @@
 <section class="row py-5" id="approach">
-    {% assign approach-articles = site.pages | where: "tag", "approach" %}
+    {% assign approach-articles = site.pages | where: "tag", "approach" | sort: "order" %}
     <div class="col">
         <div class="title">
             <h2><span class="link-spacer"></span>Our Approach
@@ -15,9 +15,8 @@
                 Innovation Lab Wales. We're a small team with big aspirations and we're trying to do things
                 <em>right</em>. There are lot of different opinions when it comes to best-practices, these articles talk
                 about our approach. You can also find the posts in our blog.</p>
-            <p class="lead">There will be more coming soon.</p>
-            <p>We'll soon be adding some additional articles here which discuss our approach to building software,
-                including "Build Something Beautiful" and our take on "Getting Real"</p>
+            <p class="lead"><em>Note: </em>These are living guides. We follow these processes on a day-to-day basis. We will tweak and
+                update them as we go along and learn form our mistakes.</p>
             <hr>
         </div>
 

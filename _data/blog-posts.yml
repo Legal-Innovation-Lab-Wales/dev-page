@@ -98,7 +98,7 @@
   author: Alex
   full-name: Alex Wing
   short-title: remote
-  full-title: Remote Working and Collaboration
+  full-title: Working and Collaboration
   sub-title: whilst working remote
   file-type: html
   publish-date: June 17
@@ -134,3 +134,26 @@
   publish-date: August 2
   publish-year: 2021
   card-color: orange
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  short-title: hideable-sections
+  full-title: Simple Javascript Hideable Sections
+  file-type: html
+  publish-date: September 20
+  publish-year: 2021
+  card-color: orange
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  category: Our Approach
+  short-title: build-a-prototype
+  full-title: How We Build a Prototype
+  file-type: html
+  publish-date: September 22
+  publish-year: 2021
+  tag: approach
+  order: 1
+  card-color: blue-dark
