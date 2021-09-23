@@ -1,0 +1,81 @@
+---
+layout: blog
+author: Phil
+full-name: Phil Reynolds
+short-title: hideable-sections
+full-title: Simple Javascript Hideable Sections
+file-type: html
+publish-date: September 20
+publish-year: 2021
+card-color: orange
+---
+
+<h1>Simple Javascript Hideable Sections</h1>
+<p class="subheading">Bootstrap has a very helpful <a href="https://getbootstrap.com/docs/5.0/components/collapse/">"collapse"</a>
+    class. However, where possible I'm trying to avoid using large frameworks for the sake of line or two of code. </p>
+
+<p>There's no need to load in an entire library or framework if you are only looking to use one or two features. It's
+    lazy programming to do this. Often it can facilitate an increase of pace if you're looking to develop something
+    quickly, but in these cases I will always strongly advocate for a reduction in scope rather than bolting on
+    additional libraries and frameworks which have potential to impact user experience or introduce vulnerabilities
+    further down the road.</p>
+
+<p>In an upcoming post <a href="/blog/phil/2021/build-a-prototype.html">(now released here)</a>, I was looking to add a
+    small section which was not important to the overall message of the article, but I wanted visitors to be able to
+    read it should they want. Look for the "How we build a Prototype" post when it goes live to see that use case.</p>
+
+<p>I've used the Bootstrap collapse functionality extensively in the past, however this has always been when I've been
+    leveraging the full toolkit or at least a lot of other helpers from it.</p>
+
+<p>For our developer blog, one of the key aims is to keep it as lightweight as possible. We use Jekyll as an <a
+        href="https://www.cloudflare.com/en-gb/learning/performance/static-site-generator/">SSG</a>and have as little JS
+    running as possible. We have Bootstrap on the main developer page for buttons and cards, but it's in the backlog to
+    strip this out and go back to basics.</p>
+
+<p>To solve this problem with Vanilla JS and no Bootstrap, the first port of call, as with all problems like this, was
+    a quick Google. The first result was from <a href="https://www.w3schools.com/howto/howto_js_collapsible.asp">W3Schools</a>.
+    I'm always skeptical of W3Schools, and this page is a great example of why. The code is outdated and way
+    overcomplicated. There were also some stackoverflow results, but most were outdated or relying heavily on jQuery.
+    (If you're unsure why this is a problem, have a look <a
+            href="https://www.google.com/search?q=why+should+you+not+jquery">here</a>, ES6 is great.)</p>
+
+<p>No luck there, time to build it from scratch. What do I want it to do? I want a button to unhide a section, then hide
+    it when pressed again.</p>
+
+<p>First the button</p>
+<pre><code class="language-html">
+&lt;a onclick="collapseElement('#note')">Title of what to reveal &lt;i class="fas fa-chevron-down">&lt;/i>&lt;/a>
+&lt;p id="note" class="hideable">Revealable text content&lt;/p>
+        </code></pre>
+
+<p>Then toggle the class with some js</p>
+<pre><code class="language-js">
+function collapseElement(input) {
+    const section = document.querySelector(input);
+    section.classList.toggle("reveal")
+}
+        </code></pre>
+<p>Then set it to reveal with a transition</p>
+<pre><code class="language-scss">
+.collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s cubic-bezier(0, 1, 0, 1);
+  &.collapse-show{
+    max-height: 20rem;
+    transition: all .5s ease-in-out;
+  }
+}
+        </code></pre>
+
+<p>The output here I think is way simpler than anything I could find online. There's no need to overcomplicate it. One
+    thing that could be done better is to swap the down chevron to an up chevron, I might add that later on.</p>
+<p>Here it is in action.</p>
+<a onclick="collapseElement('#authorNote')">Click to reveal the section <i class="fas fa-chevron-down"></i></a>
+<p id="authorNote" class="hideable">This is the hidden section. With some content. Together, we have the power to
+    revolutionise the industry. Innovative technologies, such as artificial intelligence and blockchain, are ready to
+    transform access to justice, legal decision-making and legal advice. The Legal Innovation Lab Wales is here to
+    accelerate advancements in the industry and invigorate growth in Legal Tech in Wales and beyond.</p>
+
+<p>Thanks for reading, if you have any feedback or suggestions please get in touch!</p>
+

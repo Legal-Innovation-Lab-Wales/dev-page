@@ -1,0 +1,133 @@
+---
+layout: blog
+author: Phil
+full-name: Phil Reynolds
+category: Our Approach
+short-title: build-a-prototype
+full-title: How We Build a Prototype
+file-type: html
+publish-date: September 22
+publish-year: 2021
+tag: approach
+order: 1
+card-color: blue-dark
+---
+<h2 class="text-center"><span class="link-spacer"></span>How We Build a Prototype
+    <button class="copyLink" onclick="copyText('#build-a-prototype')"><i class="fas fa-link"></i></button>
+</h2>
+<p class="lead">We are a small team, doing big things. We need to be smart about our approach to software development,
+    work hard but also work smart. Our approach to development is based off “Getting Real”, a methodology used by
+    Basecamp.
+    <a href="https://basecamp.com/gettingreal">Their full book is available online.</a></p>
+<p>There are some core principles from Getting Real which we follow as we build software. I’ll describe these below,
+    however our methodology is not identical to that in the book.</p>
+<a onclick="collapseElement('#authorNote')">A note on the authors of Getting Real <i
+        class="fas fa-chevron-down"></i></a>
+<p id="authorNote" class="hideable"> It’s unlikely that anyone is ever going to agree fully with someone else, and it is
+    important to acknowledge and understand that. I only mention this due to some of the controversy which Basecamp was
+    involved in recently.
+    <a href="https://www.theverge.com/search?q=basecamp">(Search The Verge for “Basecamp” if you want to get up to
+        speed)</a>. While, I personally don’t agree with the policy changes they implemented, I do strongly agree with a
+    lot of the principles in Getting Real.</p>
+
+<h4>Why do we take this approach?</h4>
+
+<p>Most of our work is developing prototypes which can be used as proof of concepts to show a solution to a specific
+    problem. These prototypes are simple and focused around solving a specific problem. We are not trying to build the
+    next Facebook or Amazon. We are trying to engineer a novel solution which will be useful to the people that
+    experience the need for it.</p>
+
+<p>This need lends itself to this process and by directing our focus in this way, we can build something quickly which can
+    illustrate an idea without worrying about the details or dealing with potential problems before they need to be
+    dealt with. This approach and modern software tooling, facilitates quick deployments and live updates. It makes it
+    easy to iterate and lowers the cost of changes.</p>
+
+<h4>Why don’t you just do “Agile”?</h4>
+
+<p>With Agile, you normally work in continual 2-week sprints, led by a Scrum Master or Agile Delivery Manager, and often
+    spend at least one day out of that fortnight on “ceremonies”. The features that are worked on are normally
+    identified well in advance by a product manager, then designed by a designer before making it into sprint
+    planning.</p>
+
+<p>I’m aware that I’m mixing terminologies and that there is a vast depth here, but that’s the problem. We don’t need to
+    go into all the complexity of Agile, Scrum, Kanban. We want to keep things simple, both in the code we write and the
+    process we follow when writing it!</p>
+
+<p>Agile was supposed to liberate software developers from process, but (at least from my experience, most of the time)
+    its current form reduces developers to ticket machines. When you run a sprint, what's the first thing you do when
+    you finish? You stop and catch your breath. Agile's perpetual two-week sprints don't allow for that pause, instead
+    focusing on velocity of completing tasks, the factory line.</p>
+
+<p>With a small team, each team member needs to wear many hats. Each of us needs to act as a designer, developer,
+    product and project manager. We have pretty complete autonomy and responsibility for what we produce. We don't have
+    the luxury of the additional roles which normally come to facilitate the Agile process.</p>
+
+<h4>Quick Disclaimer</h4>
+
+<p>To complement the <a href="https://basecamp.com/gettingreal/01.3-caveats-disclaimers-and-other-preemptive-strikes">“Caveats,
+    disclaimers, and other pre-emptive”</a> strikes section in Getting Real:</p>
+
+<p>This is not a post which is saying this is the best way to develop software, although I do think it's one of the best
+    ways. We are not saying that this approach will work for you, although it might. This is just giving an explanation
+    of the way which we have found works for us in the Legal Innovation Lab Wales.</p>
+
+<p>This is also only our standard approach, we don’t follow this to the letter every time. Not every project we work on
+    fits this mould. We’ll always prefer a flexible, adaptable approach which suits the project rather than trying to
+    force a square peg into a round hole!</p>
+
+<h4>What is our approach?</h4>
+
+<p class="lead">The core principle is that we want to build something; something that works, something that looks and
+    feels good.</p>
+
+<h5>Planning</h5>
+
+<p>As with any project, we start with planning. Working with the stakeholders, we'll outline their idea. Look at what
+    problem it is trying to solve and how. We will help the stakeholders understand what’s possible, what would be
+    unfeasible and suggest ways which we could engineer something to enhance their idea.</p>
+
+<p>We'll then look at the specific features which the solution needs, we'll normally categorise this using a
+    <a href="https://en.wikipedia.org/wiki/MoSCoW_method">MoSCoW</a>.
+    This determines the hierarchy of the requirements and informs which ones we need to focus on first. We can discuss
+    with the stakeholders the technical difficulty of the features they would like. Often features are far easier, or
+    far more challenging, than they might seem at first.</p>
+
+<p>We don’t want to reinvent the wheel. We don’t want to build something which already exists. Before we build anything,
+    we want find what existing solutions there are, look at what they do and what they don’t. What is good about that
+    solution and what is not? What features should we share and what additional features do we need to create?</p>
+
+<p>Planning is all about collaboration and conversation.</p>
+
+<p>The outcome from the planning is an agreed upon set of core features which we think should be achievable in a 6-week
+    development cycle. We work on the opinion that it's much better to build less features but to build them better.</p>
+
+<h5>Development</h5>
+
+<p>We’ll then spend 6 weeks engineering those features. When starting a project from scratch the first thing we'll do is
+    create Entity-Relationship Diagrams (ERDs), this data structure informs the design of the back-end. Following that,
+    we'll normally spin up a framework, most commonly <a href="https://rubyonrails.org/">Ruby on Rails</a>, but this
+    will vary depending on the project.</p>
+
+<p>With the basics in place, we can then split various area of the project up and work on them in parallel,
+    collaborating and peer reviewing our code as we go. We’ll also check in periodically with the stakeholders to gain
+    their input into the direction of what we’re building.</p>
+
+<p>You can find out more about how we actually build features
+    <a href="/blog/phil/2021/build-a-feature.html">in this article.</a></p>
+
+<p>We want to build it well, so that it is extensible and maintainable. We are unlikely to be the ones who develop this
+    software in the future, but we want to leave our code in a state that whoever comes along has an easy job, and we
+    want
+    to be proud of what we’ve built.</p>
+
+<p>This means that we would rather take longer on each feature, ensuring its quality and reduce the overall scope of what
+    we build than half-build lots of features.</p>
+
+<p>This is where one of my favourite philosophies comes in. <strong>Build Something Beautiful.</strong> This refers to
+    both the UI and the code that you're writing. It's much nicer to test a front end which is pleasant to look at. It's
+    much easier to debug code which is clean, well formatted and, well, beautiful. In the early stages of development
+    its important not to worry too much about the finer details, but I still believe its worth investing the time
+    to get the interface looking like something your proud of. The same principles apply to the code you're writing.</p>
+
+<p class="lead">If you think we can help you develop a prototype, <a href="mailto:legalinnovation@swansea.ac.uk">please
+    get in touch!</a></p>

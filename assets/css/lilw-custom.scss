@@ -166,9 +166,6 @@ main {
 
   h2, h3 {
     font-weight: 700;
-  }
-
-  h2 {
     .link-spacer {
       margin-left: 45px;
     }
@@ -503,6 +500,16 @@ main {
 
 pre {
   max-height: 36rem;
+}
+
+.hideable {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .5s cubic-bezier(0, 1, 0, 1);
+  &.reveal {
+    max-height: 20rem;
+    transition: all .5s ease-in-out;
+  }
 }
 
 /* *** FOOTER *** */
