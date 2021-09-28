@@ -128,7 +128,7 @@
   tech-stack: |
     Java web app hosted on Heroku using Apache Maven and NodeJS.
 
-- name: DRAGON-Sheild
+- name: DRAGON-Shield
   status: Planning
   link: https://www.swansea.ac.uk/project-dragon-s/
   open-source: false
