@@ -136,6 +136,16 @@
   card-color: orange
 
 - layout: blog
+  author: Alex
+  full-name: Alex Wing
+  short-title: academic-to-practical
+  full-title: Moving from academic to practical code
+  file-type: html
+  publish-date: September 20
+  publish-year: 2021
+  card-color: green
+
+- layout: blog
   author: Phil
   full-name: Phil Reynolds
   short-title: hideable-sections
