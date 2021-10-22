@@ -3,6 +3,9 @@
   link: https://directoryofexpertise.legaltech.wales/
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/expertise-directory
+  headline: A web scraping tool that collates the "Areas Of Expertise" for Swansea University academic staff across 3 colleges, the information is then provided in a searchable and filterable web interface.
+  summary: |
+    Using a Python script which runs daily using GitHub Actions, data is gathered from the public staff profiles on Swansea.ac.uk. This is then collated into a single file and hosted in a public interface. This interface allows exploration of the areas of expertise to match with users with similar areas of expertise. The entire app is based on the university website structure and reliant on staff providing their areas of expertise. If the web structure changes this app will break.
   overview: |
     A web application that collates the "Areas of Expertise" that live on individual staff member profiles into a single
     page and allows them to be filtered with a free text box and department dropdown.
@@ -23,6 +26,9 @@
   link: https://scenario-platform.legaltech.wales/
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/scenario-platform
+  headline: A web scraping tool that collates the "Areas Of Expertise" for Swansea University academic staff across 3 colleges, the information is then provided in a searchable and filterable web interface.
+  summary: |
+    With a brief from Dr Matthew Parry an app was developed which allowed admin users to create and manage scenarios which have a branching, non-linear, structure and where each answer could influence a range of custom measures. Examples include interviewing a client within a legal setting. Measuring factors such as compliance, client understanding and approach. Approaching a medical situation and measuring on proper procedure and situational understanding.
   overview: |
     A Tool to help user practice specific scenarios, such as interviewing a client, approaching a medical situation or
     facing something where they have performed poorly in the past.
@@ -36,11 +42,14 @@
   tech-stack: |
     Ruby on Rails web app with Devise for user authentication.
 
-- name: Judiciary Tagger
+- name: Tagging Case Law
   status: Released
   link: https://akn-judiciary-demo.legaltech.wales/
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/judiciary-akn-tagger
+  headline: A web interface for displaying a collection of case law extracted from PDF documents into an ontology via natural language processing.
+  summary: |
+    The creation of the ontology via NLP extraction on the case law PDF documents was initially done by Livio Robaldo and our work built on this by taking the resultant XML and ontology model and producing the web interface as well as API endpoints. the information is presented in a responsive web design along with the ontological dependencies between them via the entities involved such as the judges, lawyers, courts and persons (though this latter entity was removed over GDPR concerns).
   overview: |
     This repository contains the application code for the Judiciary Akn Tagger (JAT). This application contains 101 case
     law files from https://www.judiciary.uk tagged in the Akoma Ntoso XML standard.
@@ -55,6 +64,9 @@
   link: https://include-journey-demo.legaltech.wales/
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/include-journey
+  headline: A web app to help prison leavers on their rehabilitation journey
+  summary: |
+    Working with Dr Gemma Morgan alongside the team members from Include and the service users they walk alongside, an application has been designed and built to help facilitate the work that Include do. The app comprises two sides of the same coin, one side for team members, the other for the service users. Team members have an overview of all the users and can delve into specific aspects of their journey. Users can use the application to record their wellbeing, to write a journal, keep track of their appointments, contacts and goals. All of these activities are encouraged using simple gamification.
   overview: |
     *By Gemma Morgan* At present criminal justice agencies both in the UK and internationally do not fully realise the
     opportunities that digital technologies offer to improve service delivery and the lives of service users. As a
@@ -66,24 +78,27 @@
   tech-stack: |
     Ruby on Rails web app with Devise for user authentication.
 
-- name: Privacy Demo
-  status: Released
-  link: https://developer.legaltech.wales/privacy-demo.html
-  open-source: false
-  github:
-  overview: |
-    Privacy Policies suck. No one wants to read them. We're trying to make them better with this idea.
-
-    Human readable information for humans and a link to a broad policy available for those who want and need it.
-  tech-stack: |
-    HTML + CSS, Hosted on Netlify
+#- name: Privacy Demo
+#  status: Released
+#  link: https://developer.legaltech.wales/privacy-demo.html
+#  open-source: false
+#  github:
+#  headline:
+#  summary: |
+#  overview: |
+#    Privacy Policies suck. No one wants to read them. We're trying to make them better with this idea.
+#
+#    Human readable information for humans and a link to a broad policy available for those who want and need it.
+#  tech-stack: |
+#    HTML + CSS, Hosted on Netlify
 
 - name: Regulatory Navigation Tool
   status: Released
   link: https://regulatory-navigation-tool.legaltech.wales
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/regulatory-navigation-tool/
-  overview: |
+  headline:
+  summary: |
     [LawtechUK](https://technation.io/lawtechuk/") launched an interactive PDF to help "those innovating in law to
     navigate the regulatory landscape". You can read about it and see the [original PDF tool here](https://technation.io/news/launching-lawtech-regulatory-navigation-tool/)
 
@@ -96,9 +111,13 @@
     ReactJS, Hosted on Netlify
 
 - name: DRAGON-Spotter
-  status: Development
+  status: Demo
   link: https://www.swansea.ac.uk/project-dragon-s/
-  open-source: false
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/dragon-spotter
+  headline: A web interface to a ML classification model for identifying conversations which contain grooming as part of the Detecting Resistance Against Grooming ONline (DRAGON) Project.
+  summary: |
+    As part of the DRAGON project led by Professor Nuria Lorenzo-Dus, we developed an interface that allows law enforcement officers to upload and process conversations which have been extracted from suspects devices. The model identifies grooming tactics in the conversations and gives an overall suspicion score to aid officers in the evidence gathering process. The interface allows conversations to be collated and viewed based on the participants, platform or suspicion score.
   overview: |
     Words by Principal investigator: Professor Nuria Lorenzo-Dus
 
@@ -111,9 +130,12 @@
     Ruby on Rails front end which interfaces with a ML classification model.
 
 - name: KIID Onboarding Tool
-  status: Development
+  status: Demo
   link: https://zeidler.group/insights/zeidler-group-announces-strategic-partnership-with-the-legal-innovation-lab-wales-to-build-ai-solutions-for-legal-delivery/
   open-source: false
+  headline:
+  summary: |
+    A web interface and API endpoint to an NLP Java application developed by Livio Robaldo that can programmatically extract features from Key Investor Information Documents and return these features in a JSON structure. Built in collaboration with Zeidler group.
   overview: |
     In collaboration with the Zeidler Group. Words by Arne Zeidler:
 
@@ -128,10 +150,32 @@
   tech-stack: |
     Java web app hosted on Heroku using Apache Maven and NodeJS.
 
+- name: Agor Dawn
+  status: Demo
+  link: https://agordawn.legaltech.wales
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/agor-dawn
+  headline: A web application designed to bring people together for research collaborations.
+  summary: |
+    Following a loose brief from Dr Louisa Huxtable-Thomas, Alex and Gareth took ownership of the project. With full autonomy in 6 weeks they delivered a full-stack web app which allows researchers, academics or similar professionals can make a post, providing a summary of their project idea. This post gets displayed on the projects board, where other users can search and filter based on their particular interests. The application provides a space for the initial conversations of those interested in working on the project
+  overview: |
+    Words by Principal investigator: Professor Nuria Lorenzo-Dus
+
+    The Spotter tool will integrate Linguistics and AI to detect online grooming content, pinpointing the manipulative language tactics that groomers use: from making children feel emotionally isolated to communicating sexual intent implicitly and explicitly to them.
+
+    The Spotter tool will aid law enforcement’s online grooming detection work.
+
+    The Spotter tool will have a significant impact on our ability to keep children safe from online grooming, and successful tool development in English will furthermore pave the way for extension to other languages
+  tech-stack: |
+    Ruby on Rails front end which interfaces with a ML classification model.
+
 - name: DRAGON-Shield
   status: Planning
   link: https://www.swansea.ac.uk/project-dragon-s/
   open-source: false
+  headline: An app which will relay specialist knowledge to child safeguarding professionals about groomers’ and children’s communicative behaviour during online grooming through a learning portal.
+  summary: |
+    Built using an extendable web application framework, the Shield app will allow users to progress though 10 training modules. The modules feature a range of learning from overviews to deep dives into specific topics, they learning is presented in a variety of ways and consolidated with assessments at the end of each module. Organisation admins can manage users and view their progress.
   overview: |
     Words by Principal investigator: Professor Nuria Lorenzo-Dus
 

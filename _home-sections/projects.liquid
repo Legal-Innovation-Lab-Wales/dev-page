@@ -14,10 +14,12 @@
                     <div class="card h-100">
                         <h3 class="card-title">{{ project.name }}</h3>
                         <div class="description">
-                            <h5>Overview</h5>
+                            <h4>{{ project.headline }}</h4>
+                            {{ project.summary | markdownify }}
+{% comment %}                            <h5>Overview</h5>
                             {{ project.overview | markdownify }}
                             <h5>Tech stack</h5>
-                            <p>{{ project.tech-stack | markdownify }}</p>
+                            <p>{{ project.tech-stack | markdownify }}</p>{% endcomment %}
                         </div>
                         <a class="btn status {{ project.status | downcase }} mt-auto"
                            href="{{ project.link }}">{{ project.status }}</a>
