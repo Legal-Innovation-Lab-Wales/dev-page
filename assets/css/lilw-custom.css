@@ -150,6 +150,12 @@ main #projects {
   color: #ffffff;
   background: linear-gradient(100deg, #210047, #242F60, #020758);
 }
+main #projects .project img {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 main #projects .card {
   color: #212529;
 }

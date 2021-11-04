@@ -26,6 +26,7 @@
   link: https://scenario-platform.legaltech.wales/
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/scenario-platform
+  image: scenario-platform
   headline: A web scraping tool that collates the "Areas Of Expertise" for Swansea University academic staff across 3 colleges, the information is then provided in a searchable and filterable web interface.
   summary: |
     With a brief from Dr Matthew Parry an app was developed which allowed admin users to create and manage scenarios which have a branching, non-linear, structure and where each answer could influence a range of custom measures. Examples include interviewing a client within a legal setting. Measuring factors such as compliance, client understanding and approach. Approaching a medical situation and measuring on proper procedure and situational understanding.
@@ -64,6 +65,7 @@
   link: https://include-journey-demo.legaltech.wales/
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/include-journey
+  image: include
   headline: A web app to help prison leavers on their rehabilitation journey
   summary: |
     Working with Dr Gemma Morgan alongside the team members from Include and the service users they walk alongside, an application has been designed and built to help facilitate the work that Include do. The app comprises two sides of the same coin, one side for team members, the other for the service users. Team members have an overview of all the users and can delve into specific aspects of their journey. Users can use the application to record their wellbeing, to write a journal, keep track of their appointments, contacts and goals. All of these activities are encouraged using simple gamification.
@@ -115,6 +117,7 @@
   link: https://www.swansea.ac.uk/project-dragon-s/
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/dragon-spotter
+  image: dragon-spotter
   headline: A web interface to a ML classification model for identifying conversations which contain grooming as part of the Detecting Resistance Against Grooming ONline (DRAGON) Project.
   summary: |
     As part of the DRAGON project led by Professor Nuria Lorenzo-Dus, we developed an interface that allows law enforcement officers to upload and process conversations which have been extracted from suspects devices. The model identifies grooming tactics in the conversations and gives an overall suspicion score to aid officers in the evidence gathering process. The interface allows conversations to be collated and viewed based on the participants, platform or suspicion score.
@@ -173,6 +176,7 @@
   status: Planning
   link: https://www.swansea.ac.uk/project-dragon-s/
   open-source: false
+  image: dragon-shield
   headline: An app which will relay specialist knowledge to child safeguarding professionals about groomers’ and children’s communicative behaviour during online grooming through a learning portal.
   summary: |
     Built using an extendable web application framework, the Shield app will allow users to progress though 10 training modules. The modules feature a range of learning from overviews to deep dives into specific topics, they learning is presented in a variety of ways and consolidated with assessments at the end of each module. Organisation admins can manage users and view their progress.
