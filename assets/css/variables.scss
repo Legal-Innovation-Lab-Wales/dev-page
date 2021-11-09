@@ -94,6 +94,24 @@ $red-card-background: $red-card-light-1;
 $red-card-background-2: linear-gradient(35deg, $red-card-light-1, $red-card-light-2);
 $red-card-text: #7b241c;
 
+//Project Card Backgrounds
+$include-brand: #f4e311;
+$sp-background-1: linear-gradient( 125deg, $blue-card-text -20%, $blue-card-light-2, $blue-card-light-3 110%);
+$sp-background-2: linear-gradient( 125deg, $blue-card-light-1 10%, $blue-card-light-2, $dark-gray 120%);
+$spot-brand-1: #931837;
+$spot-brand-2: #b05b72;
+$shld-brand-1: #23909b;
+$shld-brand-2: #5fbeb8;
+$shld-ink: #242b47;
+
+$ed-brand: linear-gradient(125deg, $ink, $dark-gray, $shld-ink);
+
+
+
+
+//$sp-background-1: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+//$sp-background-2: linear-gradient(to left , #051937, #004d7a, #008793, #00bf72, #a8eb12);
+
 .navbar > .container, .navbar > .container-fluid {
   justify-content: flex-start;
 }
