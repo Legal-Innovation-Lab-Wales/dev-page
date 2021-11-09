@@ -1,33 +1,10 @@
-- name: Expertise Directory
-  status: Released
-  link: https://directoryofexpertise.legaltech.wales/
-  open-source: true
-  github: https://github.com/Legal-Innovation-Lab-Wales/expertise-directory
-  headline: A web scraping tool that collates the "Areas Of Expertise" for Swansea University academic staff across 3 colleges, the information is then provided in a searchable and filterable web interface.
-  summary: |
-    Using a Python script which runs daily using GitHub Actions, data is gathered from the public staff profiles on Swansea.ac.uk. This is then collated into a single file and hosted in a public interface. This interface allows exploration of the areas of expertise to match with users with similar areas of expertise. The entire app is based on the university website structure and reliant on staff providing their areas of expertise. If the web structure changes this app will break.
-  overview: |
-    A web application that collates the "Areas of Expertise" that live on individual staff member profiles into a single
-    page and allows them to be filtered with a free text box and department dropdown.
-
-    There are quite a few limitations to this work. As it is a web scraper it is dependent on the Swansea University
-    website for its information, if the website structure changes it will stop working.
-
-    At the moment it only covers the Hillary Rodham Clinton School of Law, the College of Science and the College of
-    Arts and Humanities, the other colleges display their staff profiles in a different structure and so will need to be
-    added in time.
-  tech-stack: |
-    A collection of web scraping python scripts are run daily by a GitHub Action, this generates a JSON file. The
-    updated file is picked up by Netlify which hosts the website. The front end is a React web application that pulls
-    the data out of the JSON into an HTML table.
-
 - name: Scenario Platform
   status: Demo
   link: https://scenario-platform.legaltech.wales/
   open-source: true
   github: https://github.com/Legal-Innovation-Lab-Wales/scenario-platform
   image: scenario-platform
-  headline: A web scraping tool that collates the "Areas Of Expertise" for Swansea University academic staff across 3 colleges, the information is then provided in a searchable and filterable web interface.
+  headline: An app which facilitates the creation and practice of interactive scenarios for extending theory knowledge into practice.
   summary: |
     With a brief from Dr Matthew Parry an app was developed which allowed admin users to create and manage scenarios which have a branching, non-linear, structure and where each answer could influence a range of custom measures. Examples include interviewing a client within a legal setting. Measuring factors such as compliance, client understanding and approach. Approaching a medical situation and measuring on proper procedure and situational understanding.
   overview: |
@@ -42,23 +19,6 @@
     rehabilitation journey and prevent reoffending.
   tech-stack: |
     Ruby on Rails web app with Devise for user authentication.
-
-- name: Tagging Case Law
-  status: Released
-  link: https://akn-judiciary-demo.legaltech.wales/
-  open-source: true
-  github: https://github.com/Legal-Innovation-Lab-Wales/judiciary-akn-tagger
-  headline: A web interface for displaying a collection of case law extracted from PDF documents into an ontology via natural language processing.
-  summary: |
-    The creation of the ontology via NLP extraction on the case law PDF documents was initially done by Livio Robaldo and our work built on this by taking the resultant XML and ontology model and producing the web interface as well as API endpoints. the information is presented in a responsive web design along with the ontological dependencies between them via the entities involved such as the judges, lawyers, courts and persons (though this latter entity was removed over GDPR concerns).
-  overview: |
-    This repository contains the application code for the Judiciary Akn Tagger (JAT). This application contains 101 case
-    law files from https://www.judiciary.uk tagged in the Akoma Ntoso XML standard.
-  tech-stack: |
-    Composed of a Java back-end and React front-end, the data-sources for this application come from a combination of an
-    Ontology Model, and the aforementioned XML files.
-
-    **Note:** This app goes into hibernation when not in use, if it hasn't loaded in about 60s give the page a refresh
 
 - name: Include Journey
   status: Demo
@@ -80,38 +40,6 @@
   tech-stack: |
     Ruby on Rails web app with Devise for user authentication.
 
-#- name: Privacy Demo
-#  status: Released
-#  link: https://developer.legaltech.wales/privacy-demo.html
-#  open-source: false
-#  github:
-#  headline:
-#  summary: |
-#  overview: |
-#    Privacy Policies suck. No one wants to read them. We're trying to make them better with this idea.
-#
-#    Human readable information for humans and a link to a broad policy available for those who want and need it.
-#  tech-stack: |
-#    HTML + CSS, Hosted on Netlify
-
-- name: Regulatory Navigation Tool
-  status: Released
-  link: https://regulatory-navigation-tool.legaltech.wales
-  open-source: true
-  github: https://github.com/Legal-Innovation-Lab-Wales/regulatory-navigation-tool/
-  headline:
-  summary: |
-    [LawtechUK](https://technation.io/lawtechuk/") launched an interactive PDF to help "those innovating in law to
-    navigate the regulatory landscape". You can read about it and see the [original PDF tool here](https://technation.io/news/launching-lawtech-regulatory-navigation-tool/)
-
-    This original is a wealth of knowledge and an incredible tool, however we discovered it had several compatibility
-    issues in a range of browsers.
-
-    In a 1-day build, Ieuan took this tool and rebuilt it with ReactJS. After checking with LawtechUK its now live on
-    the web.
-  tech-stack: |
-    ReactJS, Hosted on Netlify
-
 - name: DRAGON-Spotter
   status: Demo
   link: https://www.swansea.ac.uk/project-dragon-s/
@@ -121,46 +49,6 @@
   headline: A web interface to a ML classification model for identifying conversations which contain grooming as part of the Detecting Resistance Against Grooming ONline (DRAGON) Project.
   summary: |
     As part of the DRAGON project led by Professor Nuria Lorenzo-Dus, we developed an interface that allows law enforcement officers to upload and process conversations which have been extracted from suspects devices. The model identifies grooming tactics in the conversations and gives an overall suspicion score to aid officers in the evidence gathering process. The interface allows conversations to be collated and viewed based on the participants, platform or suspicion score.
-  overview: |
-    Words by Principal investigator: Professor Nuria Lorenzo-Dus
-
-    The Spotter tool will integrate Linguistics and AI to detect online grooming content, pinpointing the manipulative language tactics that groomers use: from making children feel emotionally isolated to communicating sexual intent implicitly and explicitly to them.
-
-    The Spotter tool will aid law enforcement’s online grooming detection work.
-
-    The Spotter tool will have a significant impact on our ability to keep children safe from online grooming, and successful tool development in English will furthermore pave the way for extension to other languages
-  tech-stack: |
-    Ruby on Rails front end which interfaces with a ML classification model.
-
-- name: KIID Onboarding Tool
-  status: Demo
-  link: https://zeidler.group/insights/zeidler-group-announces-strategic-partnership-with-the-legal-innovation-lab-wales-to-build-ai-solutions-for-legal-delivery/
-  open-source: false
-  headline:
-  summary: |
-    A web interface and API endpoint to an NLP Java application developed by Livio Robaldo that can programmatically extract features from Key Investor Information Documents and return these features in a JSON structure. Built in collaboration with Zeidler group.
-  overview: |
-    In collaboration with the Zeidler Group. Words by Arne Zeidler:
-
-    The problem that we want to address is the onboarding process of existing Key Investor Information Documents (KIIDs) from new clients to our application.
-
-    At the moment, we have to copy and paste the content of each of the existing KIIDs into an excel based "standing data form", which is then uploaded to our application. This is an extremely time-consuming process, which can take months,and even with the greatest level of care, it is prone to human errors.
-
-    The idea is to use AI to read the KIIDs in bulk and understand the sections so that our application can automatically populate the right areas of the database with the appropriate sections, including formatted text and numbersfrom the KIIDs.
-
-    In summary, the idea is an automated onboarding process based on the "understanding" of the documents.
-
-  tech-stack: |
-    Java web app hosted on Heroku using Apache Maven and NodeJS.
-
-- name: Agor Dawn
-  status: Demo
-  link: https://agordawn.legaltech.wales
-  open-source: true
-  github: https://github.com/Legal-Innovation-Lab-Wales/agor-dawn
-  headline: A web application designed to bring people together for research collaborations.
-  summary: |
-    Following a loose brief from Dr Louisa Huxtable-Thomas, Alex and Gareth took ownership of the project. With full autonomy in 6 weeks they delivered a full-stack web app which allows researchers, academics or similar professionals can make a post, providing a summary of their project idea. This post gets displayed on the projects board, where other users can search and filter based on their particular interests. The application provides a space for the initial conversations of those interested in working on the project
   overview: |
     Words by Principal investigator: Professor Nuria Lorenzo-Dus
 
@@ -188,3 +76,114 @@
     The Shield tool will strengthen child safeguarding professionals’ ability to prevent children from being sexually groomed online. It will also allow end users to understand and better trust the AI decision-making process when identifying online grooming content.
   tech-stack: |
     Likely to be a Ruby on Rails web app.
+
+- name: Agor Dawn
+  status: Demo
+  link: https://agordawn.legaltech.wales
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/agor-dawn
+  headline: A web application designed to bring people together for research collaborations.
+  summary: |
+    Following a loose brief from Dr Louisa Huxtable-Thomas, Alex and Gareth took ownership of the project. With full autonomy in 6 weeks they delivered a full-stack web app which allows researchers, academics or similar professionals can make a post, providing a summary of their project idea. This post gets displayed on the projects board, where other users can search and filter based on their particular interests. The application provides a space for the initial conversations of those interested in working on the project
+  overview: |
+    Words by Principal investigator: Professor Nuria Lorenzo-Dus
+
+    The Spotter tool will integrate Linguistics and AI to detect online grooming content, pinpointing the manipulative language tactics that groomers use: from making children feel emotionally isolated to communicating sexual intent implicitly and explicitly to them.
+
+    The Spotter tool will aid law enforcement’s online grooming detection work.
+
+    The Spotter tool will have a significant impact on our ability to keep children safe from online grooming, and successful tool development in English will furthermore pave the way for extension to other languages
+  tech-stack: |
+    Ruby on Rails front end which interfaces with a ML classification model.
+
+- name: Expertise Directory
+  status: Released
+  link: https://directoryofexpertise.legaltech.wales/
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/expertise-directory
+  headline: A web scraping tool that collates the "Areas Of Expertise" for Swansea University academic staff across 3 colleges, the information is then provided in a searchable and filterable web interface.
+  summary: |
+    Using a Python script which runs daily using GitHub Actions, data is gathered from the public staff profiles on Swansea.ac.uk. This is then collated into a single file and hosted in a public interface. This interface allows exploration of the areas of expertise to match with users with similar areas of expertise. The entire app is based on the university website structure and reliant on staff providing their areas of expertise. If the web structure changes this app will break.
+  overview: |
+    A web application that collates the "Areas of Expertise" that live on individual staff member profiles into a single
+    page and allows them to be filtered with a free text box and department dropdown.
+
+    There are quite a few limitations to this work. As it is a web scraper it is dependent on the Swansea University
+    website for its information, if the website structure changes it will stop working.
+
+    At the moment it only covers the Hillary Rodham Clinton School of Law, the College of Science and the College of
+    Arts and Humanities, the other colleges display their staff profiles in a different structure and so will need to be
+    added in time.
+  tech-stack: |
+    A collection of web scraping python scripts are run daily by a GitHub Action, this generates a JSON file. The
+    updated file is picked up by Netlify which hosts the website. The front end is a React web application that pulls
+    the data out of the JSON into an HTML table.
+
+- name: Tagging Case Law
+  status: Released
+  link: https://akn-judiciary-demo.legaltech.wales/
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/judiciary-akn-tagger
+  headline: A web interface for displaying a collection of case law extracted from PDF documents into an ontology via natural language processing.
+  summary: |
+    The creation of the ontology via NLP extraction on the case law PDF documents was initially done by Livio Robaldo and our work built on this by taking the resultant XML and ontology model and producing the web interface as well as API endpoints. the information is presented in a responsive web design along with the ontological dependencies between them via the entities involved such as the judges, lawyers, courts and persons (though this latter entity was removed over GDPR concerns).
+  overview: |
+    This repository contains the application code for the Judiciary Akn Tagger (JAT). This application contains 101 case
+    law files from https://www.judiciary.uk tagged in the Akoma Ntoso XML standard.
+  tech-stack: |
+    Composed of a Java back-end and React front-end, the data-sources for this application come from a combination of an
+    Ontology Model, and the aforementioned XML files.
+
+    **Note:** This app goes into hibernation when not in use, if it hasn't loaded in about 60s give the page a refresh
+
+- name: Privacy Demo
+  status: Released
+  link: https://developer.legaltech.wales/privacy-demo.html
+  open-source: false
+  github:
+  headline:
+  summary: |
+    Privacy Policies suck. No one wants to read them. We're trying to make them better with this idea.
+
+    Human readable information for humans and a link to a broad policy available for those who want and need it.
+  tech-stack: |
+    HTML + CSS, Hosted on Netlify
+
+- name: Regulatory Navigation Tool
+  status: Released
+  link: https://regulatory-navigation-tool.legaltech.wales
+  open-source: true
+  github: https://github.com/Legal-Innovation-Lab-Wales/regulatory-navigation-tool/
+  headline:
+  summary: |
+    [LawtechUK](https://technation.io/lawtechuk/") launched an interactive PDF to help "those innovating in law to
+    navigate the regulatory landscape". You can read about it and see the [original PDF tool here](https://technation.io/news/launching-lawtech-regulatory-navigation-tool/)
+
+    This original is a wealth of knowledge and an incredible tool, however we discovered it had several compatibility
+    issues in a range of browsers.
+
+    In a 1-day build, Ieuan took this tool and rebuilt it with ReactJS. After checking with LawtechUK its now live on
+    the web.
+  tech-stack: |
+    ReactJS, Hosted on Netlify
+
+- name: KIID Onboarding Tool
+  status: Demo
+  link: https://zeidler.group/insights/zeidler-group-announces-strategic-partnership-with-the-legal-innovation-lab-wales-to-build-ai-solutions-for-legal-delivery/
+  open-source: false
+  headline:
+  summary: |
+    A web interface and API endpoint to an NLP Java application developed by Livio Robaldo that can programmatically extract features from Key Investor Information Documents and return these features in a JSON structure. Built in collaboration with Zeidler group.
+  overview: |
+    In collaboration with the Zeidler Group. Words by Arne Zeidler:
+
+    The problem that we want to address is the onboarding process of existing Key Investor Information Documents (KIIDs) from new clients to our application.
+
+    At the moment, we have to copy and paste the content of each of the existing KIIDs into an excel based "standing data form", which is then uploaded to our application. This is an extremely time-consuming process, which can take months,and even with the greatest level of care, it is prone to human errors.
+
+    The idea is to use AI to read the KIIDs in bulk and understand the sections so that our application can automatically populate the right areas of the database with the appropriate sections, including formatted text and numbersfrom the KIIDs.
+
+    In summary, the idea is an automated onboarding process based on the "understanding" of the documents.
+
+  tech-stack: |
+    Java web app hosted on Heroku using Apache Maven and NodeJS.
