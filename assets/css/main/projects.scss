@@ -18,20 +18,27 @@
 
         .header {
           padding: 1rem;
+
           img {
             max-width: 10rem;
+          }
+
+          h4 {
+            margin-top: 1rem;
           }
         }
 
         .body {
-          margin-top:auto;
+          margin-top: auto;
+          padding: 1rem;
+
           .btn {
             width: 160px;
             margin: 0.2rem auto;
             font-weight: 700;
 
             &.status {
-              color: $white;
+              color: #fff;
 
               &.released {
                 background: $green;
