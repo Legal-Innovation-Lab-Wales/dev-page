@@ -1,0 +1,51 @@
+#projects {
+  color: $white;
+  background: $projects-background;
+
+  .card {
+    color: $ink;
+
+    .btn {
+      width: 160px;
+      margin: 0.2rem auto;
+      font-weight: 700;
+
+      &.status {
+        color: $white;
+
+        &.released {
+          background: $green;
+
+          &:hover {
+            background: $green-grad;
+          }
+        }
+
+        &.demo {
+          background: $navy;
+
+          &:hover {
+            background: $navy-grad;
+          }
+        }
+
+        &.development {
+          background: $orange;
+        }
+
+        &.planning {
+          background: $lime;
+        }
+      }
+
+      &.repo {
+        background: #24292e;
+        color: $white;
+
+        &:hover {
+          background: $repo-button-grad;
+        }
+      }
+    }
+  }
+}

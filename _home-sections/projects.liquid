@@ -7,7 +7,7 @@
             <p class="lead">These are the projects which we have worked on or contributed to.</p>
         </div>
 
-        <div class="projects">
+{% comment %}        <div class="project-cards">
             {% for project in site.data.projects %}
                 <div class="project" id="{{ project.name }}">
                     {% if project.image %}
@@ -23,15 +23,14 @@
                             Code <i class="fab fa-github"></i></a>
                     {% endif %}
                 </div>
-                {% if forloop.last != true %}
+{% comment %}                {% if forloop.last != true %}
                     <hr>
-                {% endif %}
+                {% endif %}{% endcomment %}
             {% endfor %}
-        </div>
+        </div>{% endcomment %}
 
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 card-row">
-
+        <div class="row row-cols-1 row-cols-xl-2 g-4 card-row">
             {% for project in site.data.projects %}
                 <div class="col">
                     <div class="card h-100">
@@ -53,7 +52,8 @@
                     </div>
                 </div>
             {% endfor %}
-
         </div>
+
+
     </div>
 </section>

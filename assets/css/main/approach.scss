@@ -1,0 +1,49 @@
+#approach {
+  color: $white;
+  background: $approach-background;
+
+  a {
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  article {
+    max-width: 36rem;
+    font-size: 1.1rem;
+
+    h4 {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+
+      em {
+        font-weight: 700;
+      }
+
+      a {
+        font-weight: 700;
+        color: $white;
+        text-decoration: none;
+        font-style: italic;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    blockquote {
+      color: $gray;
+      border-left: 0.2rem solid $gray;
+      padding-left: 0.5rem;
+    }
+  }
+}
