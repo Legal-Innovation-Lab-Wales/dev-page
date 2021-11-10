@@ -150,7 +150,7 @@
   link: https://developer.legaltech.wales/privacy-demo.html
   open-source: false
   github:
-  headline:
+  headline: Human readable information for humans.
   summary: |
     Privacy Policies suck. No one wants to read them. We're trying to make them better with this idea.
 
@@ -182,7 +182,7 @@
   status: Demo
   link: https://zeidler.group/insights/zeidler-group-announces-strategic-partnership-with-the-legal-innovation-lab-wales-to-build-ai-solutions-for-legal-delivery/
   open-source: false
-  headline:
+  headline: Document automation tool, with NLP.
   summary: |
     A web interface and API endpoint to an NLP Java application developed by Livio Robaldo that can programmatically extract features from Key Investor Information Documents and return these features in a JSON structure. Built in collaboration with Zeidler group.
   overview: |
