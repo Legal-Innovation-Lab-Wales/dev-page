@@ -169,8 +169,12 @@ main #projects .card-row .col .card .header {
 main #projects .card-row .col .card .header img {
   max-width: 10rem;
 }
+main #projects .card-row .col .card .header h4 {
+  margin-top: 1rem;
+}
 main #projects .card-row .col .card .body {
   margin-top: auto;
+  padding: 1rem;
 }
 main #projects .card-row .col .card .body .btn {
   width: 160px;
@@ -178,7 +182,7 @@ main #projects .card-row .col .card .body .btn {
   font-weight: 700;
 }
 main #projects .card-row .col .card .body .btn.status {
-  color: #ffffff;
+  color: #fff;
 }
 main #projects .card-row .col .card .body .btn.status.released {
   background: #378137;
