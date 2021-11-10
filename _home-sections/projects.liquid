@@ -7,28 +7,49 @@
             <p class="lead">These are the projects which we have worked on or contributed to.</p>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 card-row">
 
+        <div class="row row-cols-1 row-cols-xl-2 g-4 card-row">
             {% for project in site.data.projects %}
                 <div class="col">
-                    <div class="card h-100">
-                        <h3 class="card-title">{{ project.name }}</h3>
-                        <div class="description">
-                            <h5>Overview</h5>
-                            {{ project.overview | markdownify }}
-                            <h5>Tech stack</h5>
-                            <p>{{ project.tech-stack | markdownify }}</p>
+                    <div id="{{ project.id }}" class="card h-100">
+                        <div class="header">
+                            <div class="header-content">
+                                <h2 class="card-title">{{ project.name }}</h2>
+                                {% if project.image %}
+                                    <div class="image-container">
+                                        <img src="/assets/images/projects/{{ project.image }}.png">
+                                    </div>
+                                {% endif %}
+                                <h4>{{ project.headline }}</h4>
+                            </div>
                         </div>
-                        <a class="btn status {{ project.status | downcase }} mt-auto"
-                           href="{{ project.link }}">{{ project.status }}</a>
-                        {% if project.open-source %}
-                            <a class="btn repo" href="{{ project.github }}">Source
-                                Code <i class="fab fa-github"></i></a>
-                        {% endif %}
+                        <div class="body">
+                            <div class="description">
+                                <p>{{ project.summary | markdownify }}</p>
+                                {% comment %}<p>{{ project.tech-stack | markdownify }}</p>{% endcomment %}
+                            </div>
+                            <div class="buttons">
+                                <a class="btn status {{ project.status | downcase }}"
+                                   href="{{ project.link }}" target="_blank">
+                                    {{ project.status }} <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                {% if project.open-source %}
+                                    <a class="btn repo" href="{{ project.github }}" target="_blank">
+                                        Source Code <i class="fab fa-github"></i>
+                                    </a>
+                                {% endif %}
+                                {% if project.requirements-spec %}
+                                    <a class="btn repo" href="{{ project.requirements-spec }}">
+                                        Requirements <i class="fas fa-clipboard-list"></i>
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
-
         </div>
+
+
     </div>
 </section>

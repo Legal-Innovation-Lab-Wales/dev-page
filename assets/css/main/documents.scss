@@ -1,0 +1,76 @@
+#documents {
+
+  .card-row {
+    max-width: 600px;
+    @media (min-width: $breakpoint-xl) {
+      max-width: 900px;
+    }
+
+    .col {
+      max-width: 300px;
+      @media (max-width: $breakpoint-md) {
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      &:nth-child(1) .card {
+        background: $blue-card-background;
+        color: $blue-card-text;
+
+        &:hover {
+          background: $blue-card-background-2;
+        }
+      }
+
+      &:nth-child(2) .card {
+        background: $yellow-card-background;
+        color: $yellow-card-text;
+
+        &:hover {
+          background: $yellow-card-background-2;
+        }
+      }
+
+      &:nth-child(3) .card {
+        background: $orange-card-background;
+        color: $orange-card-text;
+
+        &:hover {
+          background: $orange-card-background-2;
+        }
+      }
+
+      &:nth-child(4) .card {
+        background: $purple-card-background;
+        color: $purple-card-text;
+
+        &:hover {
+          background: $purple-card-background-2;
+        }
+      }
+
+      &:nth-child(5) .card {
+        background: $green-2-card-background;
+        color: $green-2-card-text;
+
+        &:hover {
+          background: $green-2-card-background-2;
+        }
+      }
+
+      &:nth-child(6) .card {
+        background: $red-card-background;
+        color: $red-card-text;
+
+        &:hover {
+          background: $red-card-background-2;
+        }
+      }
+    }
+  }
+}

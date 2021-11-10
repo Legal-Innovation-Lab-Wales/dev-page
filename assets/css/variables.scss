@@ -1,0 +1,117 @@
+/* *** Variables *** */
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+/* University Colors */
+$ink: #212529;
+$navy: #242F60;
+$sky-blue: #93c9de;
+$lime: #CAD401;
+$gray: #DDDDDD;
+$green: #378137;
+$orange: #F2A53F;
+$red: #E00000;
+$white: #ffffff;
+$light-gray: #fcfcfc;
+$dark-gray: #495087;
+$white-hover: #b3b3b3;
+
+/* Page Colours */
+
+$deep-purple: #210047;
+
+$projects-background: linear-gradient(100deg, $deep-purple, $navy, #020758);
+$approach-background: linear-gradient(100deg, #0e182a, $deep-purple);
+
+$green-grad: linear-gradient(100deg, #439D43, #70C270);
+$navy-grad: linear-gradient(100deg, #3E50A3, #4E62BC);
+$repo-button-grad: linear-gradient(100deg, $dark-gray, $navy);
+
+// Colours from https://htmlcolorcodes.com/color-chart/flat-design-color-chart/
+
+// Peter river
+$blue-card-light-1: #d6eaf8;
+$blue-card-light-2: #aed6f1;
+$blue-card-light-3: #85c1e9;
+$blue-card-background: $blue-card-light-1;
+$blue-card-background-2: linear-gradient(35deg, $blue-card-light-1, $blue-card-light-2);
+$blue-card-text: #1b4f72;
+
+// Custom dark blue
+$blue-dark-card-background: $deep-purple;
+$blue-dark-card-background-2: linear-gradient(100deg, $navy, $deep-purple);
+$blue-dark-card-text: $blue-card-light-1;
+
+// Green sea
+$green-card-light-1: #d0ece7;
+$green-card-light-2: #a2d9ce;
+$green-card-light-3: #73c6b6;
+$green-card-background: $green-card-light-1;
+$green-card-background-2: linear-gradient(35deg, $green-card-light-1, $green-card-light-2);
+$green-card-text: #0b5345;
+
+// Emerald
+$green-2-card-light-1: #d5f5e3;
+$green-2-card-light-2: #abebc6;
+$green-2-card-light-3: #82e0aa;
+$green-2-card-background: $green-2-card-light-1;
+$green-2-card-background-2: linear-gradient(35deg, $green-2-card-light-1, $green-2-card-light-2);
+$green-2-card-text: #186a3b;
+
+// Amethyst
+$purple-card-light-1: #ebdef0;
+$purple-card-light-2: #d7bde2;
+$purple-card-light-3: #c39bd3;
+$purple-card-background: $purple-card-light-1;
+$purple-card-background-2: linear-gradient(35deg, $purple-card-light-1, $purple-card-light-2);
+$purple-card-text: #512e5f;
+
+//Sunflower
+$yellow-card-light-1: #fcf3cf;
+$yellow-card-light-2: #f9e79f;
+$yellow-card-light-3: #f7dc6f;
+$yellow-card-background: $yellow-card-light-1;
+$yellow-card-background-2: linear-gradient(35deg, $yellow-card-light-1, $yellow-card-light-2);
+$yellow-card-text: #7d6608;
+
+// Pumpkin
+$orange-card-light-1: #f6ddcc;
+$orange-card-light-2: #edbb99;
+$orange-card-light-3: #e59866;
+$orange-card-background: $orange-card-light-1;
+$orange-card-background-2: linear-gradient(35deg, $orange-card-light-1, $orange-card-light-2);
+$orange-card-text: #6e2c00;
+
+// Pomegranate
+$red-card-light-1: #f2d7d5;
+$red-card-light-2: #e6b0aa;
+$red-card-light-3: #d98880;
+$red-card-background: $red-card-light-1;
+$red-card-background-2: linear-gradient(35deg, $red-card-light-1, $red-card-light-2);
+$red-card-text: #7b241c;
+
+//Project Card Backgrounds
+$include-brand: #f4e311;
+$sp-background-1: linear-gradient( 125deg, $blue-card-text -20%, $blue-card-light-2, $blue-card-light-3 110%);
+$sp-background-2: linear-gradient( 125deg, $blue-card-light-1 10%, $blue-card-light-2, $dark-gray 120%);
+$spot-brand-1: #931837;
+$spot-brand-2: #b05b72;
+$shld-brand-1: #23909b;
+$shld-brand-2: #5fbeb8;
+$shld-ink: #242b47;
+
+$ed-brand: linear-gradient(125deg, $ink, $dark-gray, $shld-ink);
+
+
+
+
+//$sp-background-1: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+//$sp-background-2: linear-gradient(to left , #051937, #004d7a, #008793, #00bf72, #a8eb12);
+
+.navbar > .container, .navbar > .container-fluid {
+  justify-content: flex-start;
+}
