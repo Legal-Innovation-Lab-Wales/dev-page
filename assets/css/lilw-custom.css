@@ -27,18 +27,50 @@ header::before {
 header .header-content {
   position: relative;
 }
-header .section-links a {
+header .header-content .job-banner {
+  border-radius: 1.5rem;
+  padding: 1rem 6rem;
+  margin: 1rem -4rem;
+  background: linear-gradient(185deg, #8A2387, #E8203B, #F27121);
+  color: #fcfcfc;
+}
+header .header-content .job-banner a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #fcfcfc;
+  transition: all 0.3s ease-in-out;
+}
+header .header-content .job-banner a:hover {
+  color: #495087;
+}
+header .header-content .job-banner a.apply {
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+  background: #F27121;
+  box-shadow: 0 2px 5px #0000004d;
+}
+header .header-content .job-banner a.apply:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: none;
+}
+header .header-content .section-links {
+  display: inline-block;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: #0000002a;
+}
+header .header-content .section-links a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
 }
-header .section-links a:hover {
-  color: #DDDDDD;
+header .header-content .section-links a:hover {
+  color: #495087;
 }
-header .social {
+header .header-content .social {
   margin-top: 1rem;
 }
-header .social a {
+header .header-content .social a {
   text-align: center;
   height: 3rem;
   width: 3rem;
@@ -48,7 +80,7 @@ header .social a {
   line-height: 3rem;
   color: #495087;
 }
-header .social a:hover {
+header .header-content .social a:hover {
   color: #212529;
   background: white;
   box-shadow: none;
@@ -452,6 +484,13 @@ main #blog .card-row .col .card.red-card {
 }
 main #blog .card-row .col .card.red-card:hover {
   background: linear-gradient(35deg, #f2d7d5, #e6b0aa);
+}
+main #blog .card-row .col .card.red-2-card {
+  background: linear-gradient(185deg, #8A2387, #E8203B, #F27121);
+  color: #fcfcfc;
+}
+main #blog .card-row .col .card.red-2-card:hover {
+  background: #F27121;
 }
 main #approach {
   color: #ffffff;

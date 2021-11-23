@@ -20,6 +20,9 @@ $light-gray: #fcfcfc;
 $dark-gray: #495087;
 $white-hover: #b3b3b3;
 
+$medium-transparent: #0000004d;
+$light-transparent: #0000002a;
+
 /* Page Colours */
 
 $deep-purple: #210047;
@@ -94,6 +97,14 @@ $red-card-background: $red-card-light-1;
 $red-card-background-2: linear-gradient(35deg, $red-card-light-1, $red-card-light-2);
 $red-card-text: #7b241c;
 
+// Red 2
+$red-2: #E8203B;
+$red-2-orange: #F27121;
+
+$red-2-card-background: linear-gradient(185deg, #8A2387, $red-2, $red-2-orange);
+$red-2-card-text: $light-gray;
+$red-2-card-background-2:$red-2-orange;
+
 //Project Card Backgrounds
 $include-brand: #f4e311;
 $sp-background-1: linear-gradient( 125deg, $blue-card-text -20%, $blue-card-light-2, $blue-card-light-3 110%);
@@ -108,7 +119,7 @@ $ed-brand: linear-gradient(125deg, $ink, $dark-gray, $shld-ink);
 
 
 
-
+//$phil-grad: linear-gradient(185deg, #E6C229, #F17105 , #D11149, #6610F2,  #1A8FE3);
 //$sp-background-1: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 //$sp-background-2: linear-gradient(to left , #051937, #004d7a, #008793, #00bf72, #a8eb12);
 

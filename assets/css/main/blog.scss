@@ -108,6 +108,16 @@
             background: $red-card-background-2;
           }
         }
+
+        &.red-2-card {
+          background: $red-2-card-background;
+          color: $red-2-card-text;
+
+          &:hover {
+            background: $red-2-card-background-2;
+
+          }
+        }
       }
     }
   }
