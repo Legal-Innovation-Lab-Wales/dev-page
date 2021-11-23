@@ -23,39 +23,76 @@ header {
 
   .header-content {
     position: relative;
-  }
 
-  .section-links {
-    a {
-      text-decoration: none;
-      color: $white;
-      font-weight: 700;
+    .job-banner {
+      border-radius: 1.5rem;
+      padding: 1rem 6rem;
+      margin: 1rem -4rem;
+      background: $red-2-card-background;
+      color: $red-2-card-text;
 
-      &:hover {
-        color: $gray;
+      a {
+        font-weight: 700;
+        text-decoration: none;
+        color: $light-gray;
+        transition: all 0.3s ease-in-out;
 
+        &:hover {
+          color: $dark-gray;
+        }
+
+        &.apply {
+          padding: 0.6rem;
+          border-radius: 0.6rem;
+          background: $red-2-card-background-2;
+          box-shadow: 0 2px 5px $medium-transparent;
+
+          &:hover {
+            transform: scale(1.01, 1.01);
+            box-shadow: none;
+          }
+        }
       }
     }
-  }
 
-  .social {
-    margin-top: 1rem;
+    .section-links {
+      display:inline-block;
+      border-radius: 1.5rem;
+      padding: 0.5rem 1rem;
+      background: $light-transparent;
 
-    a {
-      text-align: center;
-      height: 3rem;
-      width: 3rem;
-      background: #ffffffe6;
-      box-shadow: 6px 4px 8px 0 #0006;
-      border-radius: 100%;
-      line-height: 3rem;
-      color: $dark-gray;
+      a {
+        text-decoration: none;
+        color: $white;
+        font-weight: 700;
 
-      &:hover {
-        color: $ink;
-        background: rgba(255, 255, 255, 1);
-        box-shadow: none;
-        transition: all 0.3s;
+        &:hover {
+          color: $dark-gray;
+
+        }
+      }
+
+    }
+
+    .social {
+      margin-top: 1rem;
+
+      a {
+        text-align: center;
+        height: 3rem;
+        width: 3rem;
+        background: #ffffffe6;
+        box-shadow: 6px 4px 8px 0 #0006;
+        border-radius: 100%;
+        line-height: 3rem;
+        color: $dark-gray;
+
+        &:hover {
+          color: $ink;
+          background: rgba(255, 255, 255, 1);
+          box-shadow: none;
+          transition: all 0.3s;
+        }
       }
     }
   }
@@ -68,6 +105,7 @@ main {
 
   h2, h3 {
     font-weight: 700;
+
     .link-spacer {
       margin-left: 45px;
     }
@@ -100,13 +138,13 @@ main {
     margin: 0;
   }
 
-@import "main/documents.scss";
+  @import "main/documents.scss";
 
-@import "main/projects.scss";
+  @import "main/projects.scss";
 
-@import "main/blog.scss";
+  @import "main/blog.scss";
 
-@import "main/approach.scss";
+  @import "main/approach.scss";
 
 
 }
@@ -123,6 +161,7 @@ pre {
   max-height: 0;
   overflow: hidden;
   transition: all .5s cubic-bezier(0, 1, 0, 1);
+
   &.reveal {
     max-height: 20rem;
     transition: all .5s ease-in-out;

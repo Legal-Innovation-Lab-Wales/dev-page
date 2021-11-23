@@ -167,3 +167,15 @@
   tag: approach
   order: 1
   card-color: blue-dark
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  category: Hiring
+  short-title: software-developer-v3
+  full-title: Software Developer - Job Description
+  file-type: html
+  publish-date: November 11
+  publish-year: 2021
+  order: 2
+  card-color: red-2
