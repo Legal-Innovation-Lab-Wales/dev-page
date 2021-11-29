@@ -28,7 +28,8 @@ header {
       border-radius: 1.5rem;
       padding: 1rem 6rem;
       margin: 1rem -4rem;
-      background: $red-2-card-background;
+      //background: $red-2-card-background;
+      background: $phil-grad;
       color: $red-2-card-text;
 
       a {
@@ -36,21 +37,20 @@ header {
         text-decoration: none;
         color: $light-gray;
         transition: all 0.3s ease-in-out;
-
-        &:hover {
-          color: $dark-gray;
-        }
+        padding: 0.6rem;
+        border-radius: 0.6rem;
+        box-shadow: 0 4px 6px $medium-transparent;
 
         &.apply {
-          padding: 0.6rem;
-          border-radius: 0.6rem;
-          background: $red-2-card-background-2;
-          box-shadow: 0 2px 5px $medium-transparent;
-
-          &:hover {
-            transform: scale(1.01, 1.01);
-            box-shadow: none;
-          }
+          background: $red-2-card-background;
+          //background: $phil-grad;
+        }
+        &.read-more {
+          background: $sp-background-3;
+        }
+        &:hover {
+          transform: scale(1.05, 1.05);
+          box-shadow: none;
         }
       }
     }

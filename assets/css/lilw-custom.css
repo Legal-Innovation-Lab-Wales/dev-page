@@ -31,7 +31,7 @@ header .header-content .job-banner {
   border-radius: 1.5rem;
   padding: 1rem 6rem;
   margin: 1rem -4rem;
-  background: linear-gradient(185deg, #8A2387, #E8203B, #F27121);
+  background: linear-gradient(to right top, #E6C229 -20%, #F17105, #D11149, #6610F2, #1A8FE3 140%);
   color: #fcfcfc;
 }
 header .header-content .job-banner a {
@@ -39,18 +39,18 @@ header .header-content .job-banner a {
   text-decoration: none;
   color: #fcfcfc;
   transition: all 0.3s ease-in-out;
-}
-header .header-content .job-banner a:hover {
-  color: #495087;
-}
-header .header-content .job-banner a.apply {
   padding: 0.6rem;
   border-radius: 0.6rem;
-  background: #F27121;
-  box-shadow: 0 2px 5px #0000004d;
+  box-shadow: 0 4px 6px #0000004d;
 }
-header .header-content .job-banner a.apply:hover {
-  transform: scale(1.01, 1.01);
+header .header-content .job-banner a.apply {
+  background: linear-gradient(165deg, #8A2387, #E8203B, #F27121);
+}
+header .header-content .job-banner a.read-more {
+  background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+header .header-content .job-banner a:hover {
+  transform: scale(1.05, 1.05);
   box-shadow: none;
 }
 header .header-content .section-links {
@@ -486,7 +486,7 @@ main #blog .card-row .col .card.red-card:hover {
   background: linear-gradient(35deg, #f2d7d5, #e6b0aa);
 }
 main #blog .card-row .col .card.red-2-card {
-  background: linear-gradient(185deg, #8A2387, #E8203B, #F27121);
+  background: linear-gradient(165deg, #8A2387, #E8203B, #F27121);
   color: #fcfcfc;
 }
 main #blog .card-row .col .card.red-2-card:hover {
