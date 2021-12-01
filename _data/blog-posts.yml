@@ -55,12 +55,12 @@
   author: Phil
   full-name: Phil Reynolds
   category: Our Approach
-  short-title: tooling
-  full-title: Tools We Use
+  short-title: tooling-old
+  full-title: Tools We Use (Deprecated)
   file-type: html
   publish-date: May 18
   publish-year: 2021
-  tag: approach
+  order: 3
   card-color: blue-dark
 
 - layout: blog
@@ -179,3 +179,16 @@
   publish-year: 2021
   order: 2
   card-color: red-2
+
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  category: Our Approach
+  short-title: tooling
+  full-title: Tools We Use
+  file-type: html
+  publish-date: December 1
+  publish-year: 2021
+  tag: approach
+  order: 3
+  card-color: blue-dark
