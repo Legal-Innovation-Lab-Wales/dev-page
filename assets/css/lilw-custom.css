@@ -496,12 +496,14 @@ main #approach {
   color: #ffffff;
   background: linear-gradient(100deg, #0e182a, #210047);
 }
-main #approach a {
+main #approach button {
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
+  background: none;
+  border: none;
 }
-main #approach a:hover {
+main #approach button:hover {
   text-decoration: underline;
 }
 main #approach article {
