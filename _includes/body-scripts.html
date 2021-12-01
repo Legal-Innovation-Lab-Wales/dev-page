@@ -11,4 +11,17 @@
         document.body.removeChild(text);
     }
 </script>
+<script>
+    const approachArticleNames = document.querySelector("#approach-article-titles").children
+    for (let index=0; index<approachArticleNames.length; index++){
+        console.log(approachArticleNames[index].value)
+
+        document.getElementById("select_article_" + approachArticleNames[index].value).addEventListener("click", function(){
+            for (let index=0; index<approachArticleNames.length; index++) {
+                document.getElementById(approachArticleNames[index].value).classList.add("d-none")
+            }
+            document.getElementById(approachArticleNames[index].value).classList.remove("d-none")
+        });
+    }
+</script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0da8f5e23ca943e3baf3ebad1d8db55d"}'></script><!-- End Cloudflare Web Analytics -->
