@@ -12,16 +12,17 @@
     }
 </script>
 <script>
-    const approachArticleNames = document.querySelector("#approach-article-titles").children
-    for (let index=0; index<approachArticleNames.length; index++){
-        console.log(approachArticleNames[index].value)
+    const articleNames = [...document.querySelector("#approach-article-titles").children],
+        hideAll = () => articleNames.forEach(articleName => document.getElementById(articleName.value).classList.add("d-none")),
+        show = id => document.getElementById(id).classList.remove("d-none")
 
-        document.getElementById("select_article_" + approachArticleNames[index].value).addEventListener("click", function(){
-            for (let index=0; index<approachArticleNames.length; index++) {
-                document.getElementById(approachArticleNames[index].value).classList.add("d-none")
-            }
-            document.getElementById(approachArticleNames[index].value).classList.remove("d-none")
-        });
-    }
+    articleNames.forEach(articleName => {
+        const id = articleName.value, select_article = document.getElementById(`select_article_${id}`)
+
+        select_article.addEventListener("click", () => {
+            hideAll()
+            show(id)
+        })
+    })
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0da8f5e23ca943e3baf3ebad1d8db55d"}'></script><!-- End Cloudflare Web Analytics -->
