@@ -5,26 +5,31 @@
             <h2><span class="link-spacer"></span>Our Approach
                 <button class="copyLink" onclick="copyText('#approach')"><i class="fas fa-link"></i></button>
             </h2>
-            <p class="lead">
-                {% for article in approach-articles %}
-                    <a href="#{{ article.short-title }}">{{ article.full-title }}</a>
-                    {% unless forloop.last %} | {% endunless %}
-                {% endfor %}
-            </p>
+
             <p class="lead">This section of articles talks about the way we work in the development team at the Legal
                 Innovation Lab Wales. We're a small team with big aspirations and we're trying to do things
                 <em>right</em>. There are lot of different opinions when it comes to best-practices, these articles talk
                 about our approach. You can also find the posts in our blog.</p>
-            <p class="lead"><em>Note: </em>These are living guides. We follow these processes on a day-to-day basis. We will tweak and
-                update them as we go along and learn form our mistakes.</p>
+
+            <p> Select an article to read using the links below.</p>
+            <p id="approach-article-titles" class="lead">
+                {% for article in approach-articles %}
+                    <button id="select_article_{{ article.short-title }}" value="{{ article.short-title }}" >{{ article.full-title }}</button>
+                    {% unless forloop.last %} | {% endunless %}
+                {% endfor %}
+            </p>
+            <p><em>Note: </em>These are living guides. We follow these processes on a day-to-day basis.
+                We will tweak and update them as we go along and learn form our mistakes.</p>
             <hr>
         </div>
 
-        {% for article in approach-articles %}
-            <article class="mx-auto" id="{{ article.short-title }}">
-                {{ article.content }}
-            </article>
-            {% unless forloop.last %}<hr>{% endunless %}
-        {% endfor %}
+        <div id="approach-articles">
+            {% for article in approach-articles %}
+                <article class="mx-auto {% unless forloop.first %}d-none{% endunless %}" id="{{ article.short-title }}">
+                    {{ article.content }}
+                </article>
+                {% comment %}{% unless forloop.last %}<hr>{% endunless %}{% endcomment %}
+            {% endfor %}
+        </div>
     </div>
 </section>

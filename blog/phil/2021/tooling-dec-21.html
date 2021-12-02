@@ -1,0 +1,152 @@
+---
+layout: blog
+author: Phil
+full-name: Phil Reynolds
+category: Our Approach
+short-title: tooling-dec-21
+full-title: Tools We Use
+file-type: md
+publish-date: December 1
+publish-year: 2021
+tag: approach
+order: 3
+card-color: blue-dark
+---
+
+<h2 class="text-center">Tools We Use</h2>
+
+<p class="lead">This aims to give an overview of the tools we use and the way we use them to build software in the Legal
+    Innovation Lab Wales. It describes a current state, things are likely to change over time, and we’ll try to keep
+    this up to date as things evolve.</p>
+
+<p class="lead"><strong>Update December 2021:</strong> We've updated the way we use a few of our tools and added a few
+    more to our toolbelt. The original article is still available in our blog archive.</p>
+
+<h3 id="tool-outlook">Office / Outlook</h3>
+
+<p>The University has an Office 365 subscription for all staff. We use Outlook for emails and the Outlook calendar
+    meetings/events.</p>
+
+<h3 id="tool-teams">Teams</h3>
+
+<p>As part of the office package we use Teams as our primary communication platform. We use it in a couple of different
+    ways. The main "Team" is used to organise documents by the project team.</p>
+
+<h5>Chats</h5>
+
+<p>The main communication in teams happens in chats. <strong>These are informal conversations about a range of
+    topics</strong> with specific people or groups of people. We have a DevTeam chat and a LegalTech chat which are
+    used most frequently.</p>
+
+<h5>Channels</h5>
+
+<p>Channels are a more structured way of having conversations around a specific topic. The nature of channels is more
+    persistent and asynchronous. We should use channels for <strong>discussions around specific topics</strong> which
+    aren’t necessarily related to a task in Jira.</p>
+
+<h3 id="tool-notion">Notion</h3>
+
+<p><a href="https://www.notion.so">Notion</a> is our main knowledge base. We have a range of pages relating to specific
+    projects as well as spaces for each of our developers to work on blogs and other writing. There are also pages for
+    to help track the dev team's priorities and progress.</p>
+
+<p>We also have an Ongoing Projects Board on Notion, which the wider team use to manage different projects, and their
+    progress.</p>
+
+<h3 id="tool-lucid">Lucid</h3>
+
+<p>We use <a href="https://lucid.app/">LucidChart</a> as part of the project planning process. We create <a
+        href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">ERDs</a> and other technical drawings on
+    Lucid. The ERDs serve as a reference for the database designs in our apps and will be kept up to date during
+    development.</p>
+<p>Lucid is also great for other diagrams and drawings. The project lifecycle document as well as some specific user
+    flow documents have been created on Lucid.</p>
+
+<h3 id="tool-figma">Figma</h3>
+
+<p>We use <a href="https://www.figma.com/">Figma</a> for designing user interfaces. We don't use this religiously, but
+    when we need to showcase designs to stakeholders before we create them in code, Figma is the best tool for the job.
+</p>
+
+<h3 id="tool-planner">Planner</h3>
+
+<p>The dev team no longer uses Microsoft Planner</p>
+
+<h3 id="tool-jira">Jira</h3>
+
+<p><a href="https://www.atlassian.com/software/jira">Jira</a> is our main software development project management tool.
+    This is where the day-to-day of our dev team happens. We have several boards where individual cards correspond to
+    individual tasks. These cards are often referred to interchangeably as tasks, issues or tickets.</p>
+
+<p>The main Dev Team board is for general tasks which don’t relate to any specific project, or relate to
+    projects which are not mature enough to warrant their own board. We also have separate boards for
+    other ongoing projects.</p>
+
+<p>On these project specific boards, each issue card should relate to one specific feature, bug or task.
+    This normally equates to one Pull Request on <a href="#tool-github">GitHub</a>.</p>
+
+<p>Jira is also where we have <strong>discussions related to specific tasks.</strong> Comments can guide
+    the conversation while the description can be updated collaboratively with improvements from the
+    comments.</p>
+
+<h3 id="tool-github">GitHub</h3>
+
+<p>We use <a href="https://github.com/">GitHub</a> for version control, code repositories and peer reviews of our code.
+</p>
+
+<p>For more information on how we use GitHub, Jira, and build features see
+    <a href="#build-a-feature">“How to Build a Feature”</a></p>
+
+<h3 id="tool-calamari">Calamari</h3>
+
+<p>As with the rest of the faculty, we use <a href="#https://calamari.io/">Calamari</a> for time off booking and
+    management.</p>
+
+<h3 id="tool-zoom">Zoom</h3>
+
+<p>As well as <a href="#tool-teams">Teams</a> video meetings, we often use <a href="https://zoom.us/">Zoom</a> for video
+    conferencing.</p>
+
+<h3 id="tool-1password">1Password</h3>
+
+<p>Most of our accounts require secure passwords and <a
+        href="https://en.wikipedia.org/wiki/Multi-factor_authentication">MFA</a>. I personally use<a
+        href="https://1password.com/">1Password</a> for password and <a
+        href="https://en.wikipedia.org/wiki/One-time_password">OTP</a> management. Although other <a
+        href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a> alternatives are available such as
+    <a
+            href="https://www.lastpass.com/">LastPass</a>, <a href="https://bitwarden.com/">Bitwarden</a> and <a
+            href="https://authy.com/">Authy</a>.</p>
+
+<h2>Tech Stack</h2>
+
+<p>The following tools are more specific to our software tech stack. We have a preference for Rails due to its
+    developer-friendliness but do use Python and Java in some projects. We use the following tools as part or our
+    infrastructure stack.</p>
+
+<h3 id="tool-netlify">Netlify</h3>
+
+<p><a href="https://www.netlify.com/">Netlify</a> is one of the tools we use for static site hosting. The Developer page
+    is hosted here. If we need to spin up any other static sites, Netlify is something we would consider. Other than
+    Netlify, we would consider using <a href="#tool-cloudflare">Cloudflare</a></p>
+
+<h3 id="tool-cloudflare">Cloudflare</h3>
+
+<p><a href="https://www.cloudflare.com/en-gb/">Cloudflare</a> forms part of our technical stack. We use Cloudflare to
+    manage the DNS for legaltech.wales domain and all subdomains. Cloudflare does all the things that they do really
+    well; caching, firewalls, security and more. For most of our prototypes, Cloudflare sits between the user
+    and <a href="#tool-heroku">Heroku</a>.</p>
+
+<h3 id="tool-heroku">Heroku</h3>
+
+<p>We leverage <a href="https://www.heroku.com/">Heroku</a>'s PaaS to host the infrastructure our most of our
+    prototypes, any full-stack apps are likely to live on Heroku.</p>
+
+<h3 id="tool-rubyci">Ruby.ci</h3>
+
+<p><a href="https://ruby.ci">Ruby.ci</a> does some automated checks on our code to help use maintain high quality.</p>
+
+<h3 id="tool-sendgrid">Sendgrid</h3>
+
+<p>As part of our prototypes, we use <a href="https://sendgrid.com/">Sendgrid</a> to power email sending from our Rails
+    apps.</p>
