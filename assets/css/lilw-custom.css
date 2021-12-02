@@ -498,12 +498,13 @@ main #approach {
 }
 main #approach button {
   font-weight: 700;
-  color: #ffffff;
+  color: #03DAC6;
   text-decoration: none;
   background: none;
   border: none;
 }
 main #approach button:hover {
+  color: #03DAC6bb;
   text-decoration: underline;
 }
 main #approach article {

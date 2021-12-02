@@ -4,12 +4,13 @@
 
   button {
     font-weight: 700;
-    color: $white;
+    color: $dark-link;
     text-decoration: none;
     background: none;
     border: none;
 
     &:hover {
+      color: $dark-link-hover;
       text-decoration: underline;
     }
   }
