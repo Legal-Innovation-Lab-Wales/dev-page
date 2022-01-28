@@ -192,3 +192,14 @@
   tag: approach
   order: 3
   card-color: blue-dark
+
+- layout: blog
+  author: Ieuan
+  full-name: Ieuan Skinner
+  short-title: getting-real
+  full-title: Getting Real - The Useful Bits
+  file-type: md
+  publish-date: January 28
+  publish-year: 2022
+  card-color: yellow
+
