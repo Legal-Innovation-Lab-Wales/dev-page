@@ -203,3 +203,14 @@
   publish-year: 2022
   card-color: yellow
 
+- layout: blog
+  author: Phil
+  full-name: Phil Reynolds
+  short-title: hotwire-handbook-part-1
+  full-title: Hotwire Handbook
+  sub-title: Part 1
+  file-type: html
+  publish-date: March 22
+  publish-year: 2022
+  card-color: orange
+
