@@ -214,3 +214,12 @@
   publish-year: 2022
   card-color: orange
 
+- layout: blog
+  author: Tobi
+  full-name: Tobias Sheer Hardwick
+  short-title: global-legal-hackathon
+  full-title: Global Legal Hackathon The Developer Perspective
+  file-type: html
+  publish-date: April 11
+  publish-year: 2022
+  card-color: green
