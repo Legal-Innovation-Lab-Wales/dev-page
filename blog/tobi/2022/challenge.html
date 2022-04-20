@@ -1,0 +1,133 @@
+---
+layout: blog
+author: Tobi
+full-name: Tobias Sheer Hardwick
+short-title: challenge
+full-title: Technical Challenge
+file-type: html
+publish-date: April 20
+publish-year: 2022
+card-color: red
+---
+
+<h1 id='technical-challenge'>Technical Challenge</h1>
+
+<h2 id="contents">Contents</h2>
+<p></p>
+    <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#technical-stack">Technical Stack</a></li>
+        <li><a href="#implementation">Implementation</a></li>
+        <li><a href="#technical-debrief">Technical Debrief</a></li>
+        <li><a href="#takeaways">Takeaways</a></li>
+    </ul>
+</p>
+
+<h2 id='introduction'>Introduction</h2>
+<p>Hi! I'm Tobi, one of the newer Software Developers here at the Legal Innovation Lab. While it's been some time since I joined
+    I wanted to document my experience with the technical challenge our lab uses as part of our hiring process and how I went about implementing
+    a project for it in a blog.
+</p>
+<p>My project comprised of two separate independent applications and as such I elected to use two git repos, they can be found here:
+    <ul>
+        <li><a href='https://github.com/Zaenilith/SnakeManager-API'>Back end API</a></li>
+        <li><a href='https://github.com/Zaenilith/SnakeManager-App'>Front end Webapp</a></li>
+    </ul>
+</p>
+
+<h2 id='getting-started'>Getting Started</h2>
+<p>Like many developers I have a list of projects in the back of my mind that I never get around to starting. I saw the
+    technical challenge as the perfect opportunity to implement one of those projects. The project I elected to pick
+    out from my backlog was a managing application I could use to keep track of tasks I need to do in order to care for my pet
+    snake (and most likely, future snakes).
+</p>
+<p>When I selected this project I was cognizant that it would likely be rather large and complex to implement, as such 
+    general planning on what the project would look like structurally and what the technical stack would look like was done 
+    before the official starting time where I would be allowed to initialise the repos and get started writing code. It was
+    important to me to build the project in a modular way such that should I start running out of time the project could
+    still be left in a state that would be maintainable and clean, albeit missing some features that I had planned. I would
+    recommend this approach to others regardless of if their project is of a similar scale as this naturally leads you to
+    abiding core development principles such as SRP.
+</p>
+
+<h2 id='technical-stack'>Technical Stack</h2>
+<p>Decisions were made on what technology to use partially based on what would be required or useful and partially to 
+    demonstrate my capabilities. The application was split into a Java Spring Boot API and Angular Web App for example 
+    as I believed it to be good practice to do so, utilising Liquibase to define and update database table definitions
+    was for a similar reason. To demonstrate capability however, I elected to containerize both parts of my application
+    and host them on a local kubernetes cluster using minikube (using .yaml files to define various aspects of the 
+    deployment) - this was a task I believed to require a good level of technical knowledge and understanding of
+    kubernetes and containers, but would not take very long to implement while pairing nicely with the use of liquibase 
+    - if it were a long endevour then it would be better to simply focus on aspects that were strictly essential to the 
+    application.
+
+    In the end my project utilised the following notable techs:
+    <ul>
+        <li>Angular</li>
+        <li>Java Spring Boot</li>
+        <li>Liquibase</li>
+        <li>Swagger</li>
+        <li>Docker</li>
+        <li>Kubernetes (Minikube)</li>
+    </ul>
+</p>
+
+<h2 id='implementation'>Implementation</h2>
+<p>The project was built in perhaps an obvious order - I began by creating the API with the aim to fully complete it
+    before moving on to the front end, this was the part I was most comfortable with and fundamentally the core of the 
+    project. I set out what I beleived to be reasonable milestones for me to achieve within the challenge timeframe - 
+    an example being to fully build out the API within the 1st 24 hours, allowing me the remaining 72 hours to focus on 
+    the weaker aspects of my skillset, building out front ends. Getting the API right would set me up for the rest of the 
+    challenge while covering much of the tech and skills I wanted to demonstrate so that was the priority - if it took 
+    longer than what I had allocated that wouldn't be an issue. I did  however meet this deadline and I then turned my 
+    attention to the front end.
+</p>
+
+<p>I'd have done well to better prepare for the front end development by staying up to date with angular, as it happened 
+    I was familiar with a much older version of angular than what I was dealing with and as such a lot of time was sunk into
+    getting the project stucture to be how I'd like it and making sure everything was hooked up correctly. Really before I had
+    started working on the front end I had probably already done enough for the technical challenge, however I wanted the 
+    front end if nothing else for my own personal use (as I continue to use the project in my spare time to this day, albeit updated).
+    I felt that a Webapp front end was better for a demo than just having the API's Swagger page as the only visual element
+    I had to show off during the debrief and would give me a confidence boost when it came to doing that.
+</p>
+<p>The full 96 hours later, pens (or rather keyboards) down. I had more or less built everything I had set out to do in 
+    terms of features for the application and realistically, it was probably almost too much. By developing so much I'd easily
+    opened myself up to violating principles either from being tired or simply making a mistake when throwing such a large
+    project together in such little time. While some leniency may be offered due to the scale it's worth mentioning that a
+    small project implemented well trumps a large project implemented poorly and I had probably at least marginally over estimated
+    how much I could complete in such a short time. Regardless, I was very pleased with my project and felt immensely proud
+    of what I was able to do for the challenge, even with a few mistakes made along the way.
+</p>
+<h2 id='technical-debrief'>Technical Debrief</h2>
+<p>Now that I had built the project all that remained was to demo the project to the team and convince them that I would be a
+    good fit for the lab. Naturally as you are reading this blog, I succeeded - the debrief went very smoothly. While it can 
+    be difficult to talk about your project it's important to remember that they're not there to trip you up, the questions
+    are fairly straight forward provided you planned your project reasonably as to abide the fundamental principles and understand
+    and acknowledge potential flaws and mistakes - being able to identify these and think on how you would fix them is about as
+    good as if the flaw didn't exist. Having a project I wanted to build also helped - I was excited to show off what I had
+    built, and having pride in it gave me the confidence I required. Don't be afraid to ask questions if you need clarification
+    on what was meant by a question - I certainly did.
+</p>
+<h2 id='takeaways'>Takeaways</h2>
+<p>With all that said and done there are a couple key points I'd like to state from my experience to recommend to anyone
+    also looking to undertake the technical challenge, or simply when it comes to rapidly developing a project regardless of
+    the scale:
+    <ul>
+        <li>Go with a project that you feel excited about or would be proud to implement if you can.</li>
+        <li>Plan! While you can't write code until the challenge starts nothing is stopping you from defining your technical needs
+            or planning the project structure. Even if you can't do these in advance, doing them at the start will save you a lot of 
+            time down the line.
+        </li>
+        <li>Doing it right is much more important than doing a lot.</li>
+        <li>Know your code inside and out, demoing and explaining your code is much harder if you only use snippets and don't know
+            how it all works together.
+        </li>
+        <li>It's not the end of the world to not finish everything you wanted to - if nothing else it gives you something to
+            talk about during the debrief.
+        </li>
+        <li>Don't be nervous, we want you to succeed as much as you do!</li>
+    </ul>
+</p>
+<p class="subheading">Thanks for reading!</p>

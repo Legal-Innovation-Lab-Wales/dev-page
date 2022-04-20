@@ -222,4 +222,14 @@
   file-type: html
   publish-date: April 11
   publish-year: 2022
-  card-color: green
+  card-color: red
+
+- layout: blog
+  author: Tobi
+  full-name: Tobias Sheer Hardwick
+  short-title: challenge
+  full-title: Technical Challenge
+  file-type: html
+  publish-date: April 20
+  publish-year: 2022
+  card-color: red
