@@ -1,0 +1,208 @@
+---
+layout: blog
+author: Alaric
+full-name: Alaric Sheer Hardwick
+short-title: game-challenge
+full-title: Technical Challenge
+file-type: html
+publish-date: May 11
+publish-year: 2022
+card-color: purple
+---
+
+<h1 id='technical-challenge'>Technical Challenge - Alaric</h1>
+
+<h2 id="contents">Introduction</h2>
+<br>
+<p>
+    When a Software Developer is looking to join a new team, it’s very important that they are able to demonstrate their skills 
+    and prove they would be an asset if hired. It’s very common, therefore, that some kind of programming challenge is set to 
+    quickly establish someone’s capabilities, as part of the interview process. 
+</p>
+<p>
+    In my case, this challenge was to create any piece of software over a period of four days. I’m Alaric, and today I’m going 
+    to tell you a little about how I approached this endeavour. 
+</p>
+
+<h2 id="the-idea">The Idea</h2>
+<br>
+<p>
+    In this lab we primarily work with web applications, as they fit with our targets to satisfy stakeholders the best. However, 
+    I come from a background in games development and previously had no experience in this space besides some basic understanding
+     of HTML and design practices. I contacted the Lead Developer handling my challenge and asked if it would be appropriate to 
+     build a small game, he was very happy to explain the brief was open-ended, and as long as I could demonstrate capacity, 
+     understanding, and talent in programming and best practices then they would be eager for me to make whatever I liked. 
+</p>
+<p>
+    With my confidence buoyed, I chose to stick with the technologies with which I’m most familiar: Unity and C#; effective 
+    choices for quickly prototyping a game. Another important factor I had to consider is that I am a, truly, terrible graphic 
+    artist. As such I needed to build something that could work with a very simple art style, to keep the time short and let me 
+    focus on the all-important coding. 
+</p>
+<p>
+    My concept was a simple 2D, puzzle-platformer, I called it: The Tech Lab. 
+</p>
+<p>
+    You can find the finished project, as well as a standalone executable of the game (if you’d like to play it) 
+    <a href='https://github.com/Ricky656/TheTechLab-game'>here!</a>
+</p>
+
+<img src="/assets/images/alaric/lab_game_1.png" alt="Screenshot 1 from the game">
+
+<h2 id="considerations">Design Considerations</h2>
+<br>
+<p>
+    As well as demonstrating the requisite skills for the job interview, I also wanted to improve my understanding of various 
+    aspects of game programming that I hadn’t tackled too deeply in previous projects. I always prefer to push myself to learn 
+    and take on new challenges, rather than repeat the same things I’ve done before. Therefore I chose to include various 
+    elements that I would develop more deeply than I normally do, such as: dialogue system, event manager, cinematic controller, 
+    and a full auto-save/load system. 
+</p>
+<p>
+    Working on systems and ideas I hadn’t done previously, along with the rest of the game, does present some important 
+    difficulties, however. The technical challenge had a time limit, and it was very important there were no unfinished systems 
+    that would detract from the overall polish of the project. To counteract this I made sure to follow SRP, DRY, and KISS 
+    principles in order to keep a clear separation between the different systems. This meant that I had the option of dropping 
+    some of these ideas from the project if time was running a little short, without compromising any other part of the game. 
+    For example, the persistent save/load system had no impact on the game’s physics, and removing it would break nothing. 
+</p>
+<h2 id="building">Building The Game</h2>
+<br>
+<p>
+    The basics of the game (movement, collision, camera movement) were very easy and quick to put together, as Unity has an 
+    inbuilt physics system that is perfectly sufficient for this project’s needs.
+</p>
+<p>
+    The event manager was the thing that I was most excited to implement at the start, however. 
+</p>
+<p>
+    It’s very easy, in games programming, for there to be a lot of overlap in classes with direct referencing going back and 
+    forth as elements need to communicate - this can make it difficult to maintain or extend. A solution to this is an event 
+    manager, which can be used to allow disparate elements of a game to broadcast and receive messages from each other, without 
+    ever directly interacting. 
+</p>
+<p>
+    Mine functions by defining two ‘Dictionary’ objects that store events being listened for. Any object can add an event to 
+    this list, or can broadcast a trigger that will activate these listeners. Using the 
+    <a href='https://en.wikipedia.org/wiki/Singleton_pattern#:~:text=In%20software%20engineering%2C%20the%20singleton,mathematical%20concept%20of%20a%20singleton.'>
+        ‘singleton’
+    </a>
+    pattern, the event 
+    manager’s static functions can be called by any class without setting up any prior references. 
+</p>
+<button onclick="toggleCode(1)">Show/Hide Code</button>
+<div id="code_snippet_1" style="display:none">
+    <script src="https://gist.github.com/Ricky656/076f7f362f2ce263253610b082e5ac6b.js"></script>
+</div>
+<p>
+    <br>
+    I used this system to allow for scripted events in a level, such as a character reacting to a door being opened; as well as 
+    more integral gameplay aspects like resetting when the player character ‘died’. 
+</p>
+<p>
+    With the basics of the game down, and systems set up to keep elements nicely compartmentalised; let’s look at a more unique 
+    gameplay element I added: the ‘Entanglement Gun’. 
+</p>
+<p>
+    I wanted to create a simple physics mechanic that would be quick to implement, given my time constraints, but also offer 
+    enough possibility space in puzzle design such that it would suffice for my small prototype. The gun I came up with allows 
+    a player to fire a projectile that would connect an object it hit with their character’s physics, so any force impacted on 
+    the player would also affect this object. 
+</p>
+<p>
+    One of the things this allowed a player to do is this: 
+</p>
+<img src="/assets/images/alaric/lab_game_2.png" alt="Screenshot 2 from the game">
+<p>
+    <br>
+    An ‘entangled’ character (red) can be manoeuvred over pits because the player (blue) isn’t falling, and any movement the 
+    player makes, such as moving left and jumping, is translated. 
+</p>
+<p>
+    The code to create this is actually quite simple (a basic mouse aim/fire function, and a bullet that uses the event manager 
+    to activate an entagleable object on-hit), but I had to make sure it remained modular. Thankfully Unity has a particularly 
+    useful feature for this: compound objects. Multiple scripts can be attached to a single ‘GameObject’, this allowed me to 
+    design the system such that I only needed to add the ‘Entangleable’ script to an object to allow it to be manipulated by the 
+    player.  
+</p>
+
+<button onclick="toggleCode(2)">Show/Hide Code</button>
+<div id="code_snippet_2" style="display:none">
+    <script src="https://gist.github.com/Ricky656/17f6e0ee32e1c50a1c504fb2ce802497.js"></script>
+</div>
+<p>
+    <br>
+    The most important takeaway from this system is that I ensured it was maintainable and extendable. When I presented 
+    this project during the technical debrief part of my interview, I was asked to modify this mechanic so the player could 
+    entangle multiple objects at the same time. Due to the logical way I structured my code, this was a very simple task of 
+    changing only a couple of lines; specifically removing conditional statements that I put in to prevent the player from 
+    firing the gun if it’s already entangled, or connecting to more than one object using a single bullet. 
+</p>
+<p>
+    Of course I could delve deeper into the myriad of systems and elements that I put together to complete this small 
+    prototype, but we would be veering too far into the territory of general game programming - which is a little out of 
+    today’s scope. 
+</p>
+<p>
+    I successfully completed the project with a little time to spare; although I do suspect I created significantly more 
+    than is necessary for the challenge, it is still a valuable addition to my portfolio and a useful learning experience. 
+</p>
+<img src="/assets/images/alaric/lab_game_3.png" alt="Screenshot 3 from the game">
+
+<h2 id="conclusion">Conclusion</h2>
+<br>
+<p>
+    The technical debrief was my opportunity to demonstrate my project to the dev team. I was able to play through my short 
+    game while discussing the various systems I had implemented; I believe a functioning prototype with no bugs and reasonable 
+    visual presentation is an excellent way to present my capacity to fulfil projects. 
+</p>
+<p>
+    While we discussed what I had built, and how, I was asked several questions about how easily one might be able to modify 
+    and add to the game. The lead developer took a general interest in my game, as well as my code, and ensured any task he 
+    asked me to carry out as a demonstration would be reasonably easy and quick. Thanks to their excellent guidance, and my 
+    thorough understanding of the code, I had a very positive and enjoyable debrief!
+</p>
+<p>
+    In general I was very pleased at how I managed to properly organise and structure my code , and I believe it was key to my 
+    success in the interview process. However if I were to do it again, I would likely choose a smaller, simpler project as 
+    the criteria could have been met without committing to such a large undertaking for one weekend.
+</p>
+<p>
+    When preparing for this job interview, I also began learning Ruby and Ruby on Rails as it is the lab’s preferred development 
+    tool. As it is an object-oriented language, I mostly just needed to study the syntax using online documentation (the lack 
+    of strict-typing was probably my biggest culture-shock), and there were various useful tutorials online to help me get set 
+    up and experimenting with what can be put together quite quickly using Rails. Once I had brushed up on the MVC 
+    web-development framework, I found RoR to be very powerful for quickly prototyping ideas without having to deal with a 
+    lot of the basics it handles automatically. With only a week of learning, I feel I could have chosen to build a simple web 
+    app using Ruby for the challenge and created something quite suitable. Although I went with using Unity and C# in the end, 
+    having the knowledge of how I might translate my skills and work within this new area was very useful - and the interviewers 
+    did find it a big plus that I had already started preparing to work with their most utilised language. 
+</p>
+<p>
+    Overall I found the challenge to be quite a satisfying experience; from the start I was given good direction from the team, 
+    and communicating my thoughts to them before the start time gave me confidence in building my project - allowing me to 
+    stay focused throughout. The dev team encouraged me to ask any questions I had at any point, and were very happy to review 
+    and chat about my somewhat unorthodox project during the debrief. 
+</p>
+<p>
+    When it comes to completing a technical challenge like this, my advice is to stick to what you know you can do well 
+    to demonstrate the requirements - if you’re ever in doubt you can simply ask, as the team is always happy to give advice 
+    and clarifications. Even though the lab works primarily in Web Dev, I could show I had the required abilities even by 
+    creating something as different as a game. 
+</p>
+<p>
+    And I thought it would be fun! 
+</p>
+
+
+<script>
+function toggleCode(id){
+    var idString = "code_snippet_" + id;
+    var x = document.getElementById(idString);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>

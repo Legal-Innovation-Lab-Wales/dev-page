@@ -233,3 +233,13 @@
   publish-date: April 20
   publish-year: 2022
   card-color: red
+
+  layout: blog
+  author: Alaric
+  full-name: Alaric Sheer Hardwick
+  short-title: game-challenge
+  full-title: Technical Challenge
+  file-type: html
+  publish-date: May 11
+  publish-year: 2022
+  card-color: purple
