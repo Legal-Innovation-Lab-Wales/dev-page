@@ -234,7 +234,7 @@
   publish-year: 2022
   card-color: red
 
-  layout: blog
+- layout: blog
   author: Alaric
   full-name: Alaric Sheer Hardwick
   short-title: game-challenge
