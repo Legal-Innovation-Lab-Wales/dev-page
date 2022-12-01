@@ -243,3 +243,13 @@
   publish-date: May 11
   publish-year: 2022
   card-color: purple
+
+- layout: blog
+  author: Amara
+  full-name: Amara Finbarrs-Ezema
+  short-title: challenge
+  full-title: How I Handled My Technical Challenge
+  file-type: html
+  publish-date: December 1
+  publish-year: 2022
+  card-color: purple
