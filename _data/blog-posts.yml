@@ -253,3 +253,13 @@
   publish-date: December 1
   publish-year: 2022
   card-color: purple
+
+- layout: blog
+  author: Toyosi
+  full-name: Oluwatoyosi Oyegoke
+  short-title: challenge
+  full-title: Technical Challenge
+  file-type: html
+  publish-date: January 10
+  publish-year: 2023
+  card-color: green-2
