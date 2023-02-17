@@ -105,11 +105,11 @@
 
       #ij {
         .header {
-          background: #252331;
+          background: $include-brand-2;
           color: $white;
 
           img {
-            background: $include-brand;
+            background: $include-brand-1;
             border-radius: 2rem;
             padding: 0.8rem;
           }
@@ -214,7 +214,7 @@
           color: $white;
 
           img {
-            background: $include-brand;
+            background: $include-brand-2;
             border-radius: 2rem;
             padding: 0.8rem;
           }

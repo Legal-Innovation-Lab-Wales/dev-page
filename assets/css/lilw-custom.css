@@ -395,6 +395,15 @@ main #projects .card-row .col #ed .header .header-content {
   margin: 0 auto;
   z-index: 3;
 }
+main #projects .card-row .col #wd .header {
+  background: #3F68CE;
+  color: #ffffff;
+}
+main #projects .card-row .col #wd .header img {
+  background: #252331;
+  border-radius: 2rem;
+  padding: 0.8rem;
+}
 main #blog .card-row .col {
   width: 320px;
 }
