@@ -208,6 +208,19 @@
         }
       }
 
+      #wd {
+        .header {
+          background-color: $wd-brand;
+          color: $white;
+
+          img {
+            background: $include-brand;
+            border-radius: 2rem;
+            padding: 0.8rem;
+          }
+        }
+      }
+
       #ed {
         .header {
           position: relative;
@@ -257,6 +270,7 @@
           //z-index: 2;
         }
       }
+
     }
   }
 }

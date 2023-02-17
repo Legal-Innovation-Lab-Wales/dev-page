@@ -126,6 +126,25 @@
     updated file is picked up by Netlify which hosts the website. The front end is a React web application that pulls
     the data out of the JSON into an HTML table.
 
+- name: The Wellbeing Directory
+  id: wd
+  status: Released
+  link: https://wellbeing-directory.legaltech.wales/
+  open-source: false
+  image: wellbeing-directory
+  headline: A web application for people seeking services able to provide assistance for their particular needs with particular attention paid to being able to find services within your local area.
+  summary: |
+    Following several demoes of the Include Journey app it became apparent to Dr Gemma Morgan and our team that there was a lack of discoverability for wellbeing services in general. With this project we sought to
+    provide a platform to aid in the discovery process and assist people in finding services that can help them. After one short month this project was designed, implemented and released.
+  overview: |
+    A web application that hosts wellbeing service data as maintained by colleagues. Each service has a brief description on who they are and what they do, a list of what types of services they offer, links
+    to a website or phone number if they have one available and a physical address.
+
+    Users are then able to search for services using either partial of complete postcodes to locate services, as well as a distance from the given postcode in order to find services that are physically accessible
+    to themselves on top of being able to search by the service type they're looking for, and partial or complete names of a service if they are looking for a particular one.
+  tech-stack: |
+    Ruby on Rails app.
+
 - name: Tagging Case Law
   id: aknj
   status: Released
