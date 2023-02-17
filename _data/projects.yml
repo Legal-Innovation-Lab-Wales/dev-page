@@ -132,9 +132,9 @@
   link: https://wellbeing-directory.legaltech.wales/
   open-source: false
   image: wellbeing-directory
-  headline: A web application for people seeking services able to provide assistance for their particular needs with particular attention paid to being able to find services within your local area.
+  headline: A web application for people seeking services to suit their wellbeing needs with special attention paid to being able to find services within your local area.
   summary: |
-    Following several demoes of the Include Journey app it became apparent to Dr Gemma Morgan and our team that there was a lack of discoverability for wellbeing services in general. With this project we sought to
+    Following several demos of the Include Journey app it became apparent to Dr Gemma Morgan and our team that there was a lack of discoverability for wellbeing services in general. With this project we sought to
     provide a platform to aid in the discovery process and assist people in finding services that can help them. After one short month this project was designed, implemented and released.
   overview: |
     A web application that hosts wellbeing service data as maintained by colleagues. Each service has a brief description on who they are and what they do, a list of what types of services they offer, links
